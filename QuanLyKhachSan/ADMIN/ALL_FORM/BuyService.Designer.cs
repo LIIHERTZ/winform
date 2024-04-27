@@ -38,7 +38,7 @@
             this.lbl_TenDV = new System.Windows.Forms.Label();
             this.lbl_TenKH = new System.Windows.Forms.Label();
             this.lbl_TongTien = new System.Windows.Forms.Label();
-            this.cbb_MaKH = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbb_MaDatPhong = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_SoLuong = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Mua = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Thoat = new Guna.UI2.WinForms.Guna2Button();
@@ -51,7 +51,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(49, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 19);
+            this.label1.Size = new System.Drawing.Size(0, 23);
             this.label1.TabIndex = 71;
             this.label1.UseWaitCursor = true;
             // 
@@ -62,7 +62,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label6.Location = new System.Drawing.Point(59, 57);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 17);
+            this.label6.Size = new System.Drawing.Size(106, 23);
             this.label6.TabIndex = 82;
             this.label6.Text = "Tên dịch vụ:";
             // 
@@ -73,9 +73,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label7.Location = new System.Drawing.Point(41, 102);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 17);
+            this.label7.Size = new System.Drawing.Size(119, 29);
             this.label7.TabIndex = 83;
-            this.label7.Text = "Mã khách hàng:";
+            this.label7.Text = "Mã phòng:";
             // 
             // label3
             // 
@@ -84,7 +84,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label3.Location = new System.Drawing.Point(37, 147);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 17);
+            this.label3.Size = new System.Drawing.Size(142, 23);
             this.label3.TabIndex = 84;
             this.label3.Text = "Tên khách hàng:";
             // 
@@ -95,7 +95,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label4.Location = new System.Drawing.Point(71, 192);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 17);
+            this.label4.Size = new System.Drawing.Size(85, 23);
             this.label4.TabIndex = 85;
             this.label4.Text = "Số lượng:";
             // 
@@ -106,7 +106,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(71, 237);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
+            this.label2.Size = new System.Drawing.Size(90, 23);
             this.label2.TabIndex = 86;
             this.label2.Text = "Tổng tiền:";
             // 
@@ -117,7 +117,7 @@
             this.lbl_TenDV.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lbl_TenDV.Location = new System.Drawing.Point(189, 57);
             this.lbl_TenDV.Name = "lbl_TenDV";
-            this.lbl_TenDV.Size = new System.Drawing.Size(42, 17);
+            this.lbl_TenDV.Size = new System.Drawing.Size(52, 23);
             this.lbl_TenDV.TabIndex = 87;
             this.lbl_TenDV.Text = "trống";
             // 
@@ -128,7 +128,7 @@
             this.lbl_TenKH.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lbl_TenKH.Location = new System.Drawing.Point(189, 147);
             this.lbl_TenKH.Name = "lbl_TenKH";
-            this.lbl_TenKH.Size = new System.Drawing.Size(42, 17);
+            this.lbl_TenKH.Size = new System.Drawing.Size(52, 23);
             this.lbl_TenKH.TabIndex = 89;
             this.lbl_TenKH.Text = "trống";
             // 
@@ -139,25 +139,25 @@
             this.lbl_TongTien.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lbl_TongTien.Location = new System.Drawing.Point(189, 237);
             this.lbl_TongTien.Name = "lbl_TongTien";
-            this.lbl_TongTien.Size = new System.Drawing.Size(42, 17);
+            this.lbl_TongTien.Size = new System.Drawing.Size(52, 23);
             this.lbl_TongTien.TabIndex = 90;
             this.lbl_TongTien.Text = "trống";
             // 
-            // cbb_MaKH
+            // cbb_MaDatPhong
             // 
-            this.cbb_MaKH.BackColor = System.Drawing.Color.Transparent;
-            this.cbb_MaKH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbb_MaKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_MaKH.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbb_MaKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbb_MaKH.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbb_MaKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbb_MaKH.ItemHeight = 30;
-            this.cbb_MaKH.Location = new System.Drawing.Point(183, 92);
-            this.cbb_MaKH.Name = "cbb_MaKH";
-            this.cbb_MaKH.Size = new System.Drawing.Size(115, 36);
-            this.cbb_MaKH.TabIndex = 91;
-            this.cbb_MaKH.SelectedIndexChanged += new System.EventHandler(this.cbb_MaKH_SelectedIndexChanged);
+            this.cbb_MaDatPhong.BackColor = System.Drawing.Color.Transparent;
+            this.cbb_MaDatPhong.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbb_MaDatPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_MaDatPhong.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbb_MaDatPhong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbb_MaDatPhong.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbb_MaDatPhong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbb_MaDatPhong.ItemHeight = 30;
+            this.cbb_MaDatPhong.Location = new System.Drawing.Point(183, 92);
+            this.cbb_MaDatPhong.Name = "cbb_MaDatPhong";
+            this.cbb_MaDatPhong.Size = new System.Drawing.Size(115, 36);
+            this.cbb_MaDatPhong.TabIndex = 91;
+            this.cbb_MaDatPhong.SelectedIndexChanged += new System.EventHandler(this.cbb_MaKH_SelectedIndexChanged);
             // 
             // txt_SoLuong
             // 
@@ -171,6 +171,7 @@
             this.txt_SoLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_SoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_SoLuong.Location = new System.Drawing.Point(183, 184);
+            this.txt_SoLuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_SoLuong.Name = "txt_SoLuong";
             this.txt_SoLuong.PasswordChar = '\0';
             this.txt_SoLuong.PlaceholderText = "";
@@ -222,7 +223,7 @@
             this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.btn_Mua);
             this.Controls.Add(this.txt_SoLuong);
-            this.Controls.Add(this.cbb_MaKH);
+            this.Controls.Add(this.cbb_MaDatPhong);
             this.Controls.Add(this.lbl_TongTien);
             this.Controls.Add(this.lbl_TenKH);
             this.Controls.Add(this.lbl_TenDV);
@@ -251,7 +252,7 @@
         private System.Windows.Forms.Label lbl_TenDV;
         private System.Windows.Forms.Label lbl_TenKH;
         private System.Windows.Forms.Label lbl_TongTien;
-        private Guna.UI2.WinForms.Guna2ComboBox cbb_MaKH;
+        private Guna.UI2.WinForms.Guna2ComboBox cbb_MaDatPhong;
         private Guna.UI2.WinForms.Guna2TextBox txt_SoLuong;
         private Guna.UI2.WinForms.Guna2Button btn_Mua;
         private Guna.UI2.WinForms.Guna2Button btn_Thoat;

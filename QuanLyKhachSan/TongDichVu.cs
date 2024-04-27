@@ -15,10 +15,11 @@ namespace QuanLyKhachSan
     public partial class TongDichVu
     {
         public int MaSuDung { get; set; }
-        public Nullable<int> MaKH { get; set; }
+        public Nullable<int> MaDatPhong { get; set; }
         public string MaDV { get; set; }
+        public Nullable<int> SoLuong { get; set; }
     
+        public virtual DatPhong DatPhong { get; set; }
         public virtual DichVu DichVu { get; set; }
-        public virtual KhachHang KhachHang { get; set; }
     }
 }

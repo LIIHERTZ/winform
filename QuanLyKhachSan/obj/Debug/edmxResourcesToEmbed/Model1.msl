@@ -17,6 +17,7 @@
           <ScalarProperty Name="MaKH" ColumnName="MaKH" />
           <ScalarProperty Name="MaPhong" ColumnName="MaPhong" />
           <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
+          <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
           <ScalarProperty Name="ThoiGianDat" ColumnName="ThoiGianDat" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -107,8 +108,9 @@
       <EntityTypeMapping TypeName="QuanLyKhachSanModel.TongDichVu">
         <MappingFragment StoreEntitySet="TongDichVu">
           <ScalarProperty Name="MaSuDung" ColumnName="MaSuDung" />
-          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="MaDatPhong" ColumnName="MaDatPhong" />
           <ScalarProperty Name="MaDV" ColumnName="MaDV" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

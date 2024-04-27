@@ -18,7 +18,6 @@ namespace QuanLyKhachSan
         public KhachHang()
         {
             this.DatPhongs = new HashSet<DatPhong>();
-            this.TongDichVus = new HashSet<TongDichVu>();
         }
     
         public int MaKH { get; set; }
@@ -34,7 +33,5 @@ namespace QuanLyKhachSan
         public virtual DangNhap DangNhap { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DatPhong> DatPhongs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TongDichVu> TongDichVus { get; set; }
     }
 }

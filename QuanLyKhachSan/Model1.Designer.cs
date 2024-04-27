@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\QuanLyKhachSan\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

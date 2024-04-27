@@ -18,17 +18,21 @@ namespace QuanLyKhachSan
         public DatPhong()
         {
             this.HoaDons = new HashSet<HoaDon>();
+            this.TongDichVus = new HashSet<TongDichVu>();
         }
     
         public int MaDatPhong { get; set; }
         public Nullable<int> MaKH { get; set; }
         public Nullable<int> MaPhong { get; set; }
         public Nullable<System.DateTime> NgayDat { get; set; }
+        public Nullable<System.DateTime> NgayTra { get; set; }
         public Nullable<System.DateTime> ThoiGianDat { get; set; }
     
         public virtual KhachHang KhachHang { get; set; }
         public virtual Phong Phong { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HoaDon> HoaDons { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TongDichVu> TongDichVus { get; set; }
     }
 }

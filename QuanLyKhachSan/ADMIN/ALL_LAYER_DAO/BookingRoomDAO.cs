@@ -34,7 +34,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                     select new
                     {
                         k,
-                        j
+                        j,
+
                     };
             foreach(var i in q)
             {

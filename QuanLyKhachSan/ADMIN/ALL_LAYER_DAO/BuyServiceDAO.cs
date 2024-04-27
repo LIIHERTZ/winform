@@ -9,18 +9,27 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
     internal class BuyServiceDAO
     {
         QLKS_ENTITY db = new QLKS_ENTITY();
-        public List<KhachHang> loadKhachHang()
+        public List<Phong> loadPhong()
         {
-            var p = from k in db.KhachHangs select k;
+            var p = from k in db.Phongs where k.TinhTrang != "empty"  select k;
             return p.ToList();
         }
         public string layTenKH(string a)
         {
             string b="";
-            var q = from k in db.KhachHangs where k.MaKH.ToString() == a select k;
-            foreach (var k in q) 
+            var q = from k in db.DatPhongs
+                    join j in db.Phongs on k.MaPhong equals j.MaPhong
+                    join h in db.KhachHangs on k.MaKH equals h.MaKH
+                    where j.TinhTrang != "empty" && a == j.MaPhong.ToString()
+                    select new
+                    {
+                        k,
+                        j,
+                        h
+                    };
+            foreach( var item in q)
             {
-                b = k.HoTen;
+                b = item.h.HoTen;
             }
             return b;
         }

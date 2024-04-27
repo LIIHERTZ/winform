@@ -24,10 +24,10 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             InitializeComponent();
             madv = a;
             lbl_TenDV.Text = b;
-            cbb_MaKH.DataSource = buy.loadKhachHang();
-            cbb_MaKH.DisplayMember = "MaKH";
-            cbb_MaKH.ValueMember = "MaKH";
-            cbb_MaKH.SelectedIndex = -1;
+            cbb_MaDatPhong.DataSource = buy.loadPhong();
+            cbb_MaDatPhong.DisplayMember = "MaPhong";
+            cbb_MaDatPhong.ValueMember = "MaPhong";
+            cbb_MaDatPhong.SelectedIndex = -1;
 
         }
 
@@ -38,10 +38,10 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
 
         private void cbb_MaKH_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbb_MaKH.SelectedValue != null)
+            if (cbb_MaDatPhong.SelectedValue != null)
             {
-                string maKhachHang = cbb_MaKH.SelectedValue.ToString();
-                lbl_TenKH.Text = buy.layTenKH(maKhachHang);
+                string maphong = cbb_MaDatPhong.SelectedValue.ToString();
+                lbl_TenKH.Text = buy.layTenKH(maphong);
             }
         }
 
@@ -60,12 +60,10 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
         {
             TongDichVu a = new TongDichVu();
             a.MaDV = madv;
-            string maKhachHang = cbb_MaKH.SelectedValue.ToString();
-            a.MaKH = Convert.ToInt32(maKhachHang);
-            for (int i = 0; i < Convert.ToInt32(txt_SoLuong.Text); i++) 
-            {
-                buy.themDichVu(a);
-            }
+            string madatphong = cbb_MaDatPhong.SelectedValue.ToString();
+            a.MaDatPhong = Convert.ToInt32(madatphong);
+            a.SoLuong = Convert.ToInt32(txt_SoLuong.Text);
+            buy.themDichVu(a);
             MessageBox.Show("Thêm dịch vụ thành công!", "Thông báo");
             this.Close();
         }
