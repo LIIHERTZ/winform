@@ -53,8 +53,11 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
                 a.NgayLap = time;
                 a.NhanVienThanhToan = booked.layMaNhanVien(tendnNV);
                 a.TinhTrang = "wait";
+                booked.Sua(lbl_MaPhong.Text,lbl_MaDatPhong.Text);
                 booked.ThemHoaDon(a);
-                booked.Sua(lbl_MaPhong.Text);
+                AdminDAO admin =  new AdminDAO();
+                admin.RefreshBookedRooms();
+
             }
         }
     }

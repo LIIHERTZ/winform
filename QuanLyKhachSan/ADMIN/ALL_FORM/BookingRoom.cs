@@ -40,10 +40,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             txt_ThoiGian.Text = formattedTime;
             txt_ThoiGian.Enabled = false;
 
-            DateTime currentDate = DateTime.Today;
-            string dateString = currentDate.ToString("yyyy-MM-dd");
-            txt_NgayDat.Text = dateString;
-            txt_NgayDat.Enabled = false;
+            
                 
             txt_TenKhachHang.Enabled = false;
         }
@@ -61,8 +58,10 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             a.MaPhong = Convert.ToInt32(txt_MaPhong.Text);
 
             DateTime currentDate = DateTime.Now;
-            a.NgayDat = currentDate;
             a.ThoiGianDat = currentDate;
+            a.NgayDat = dtp_NgayDatPhong.Value;
+            a.NgayTra = dtp_NgayTraPhong.Value;
+            a.TinhTrang = "unfinish";
 
             if (txt_SoNguoi.Text == "")
             {

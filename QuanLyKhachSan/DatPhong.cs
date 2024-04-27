@@ -27,6 +27,7 @@ namespace QuanLyKhachSan
         public Nullable<System.DateTime> NgayDat { get; set; }
         public Nullable<System.DateTime> NgayTra { get; set; }
         public Nullable<System.DateTime> ThoiGianDat { get; set; }
+        public string TinhTrang { get; set; }
     
         public virtual KhachHang KhachHang { get; set; }
         public virtual Phong Phong { get; set; }

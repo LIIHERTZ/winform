@@ -19,6 +19,7 @@
           <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
           <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
           <ScalarProperty Name="ThoiGianDat" ColumnName="ThoiGianDat" />
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

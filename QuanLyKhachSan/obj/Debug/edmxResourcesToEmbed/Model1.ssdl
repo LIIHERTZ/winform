@@ -18,6 +18,7 @@
     <Property Name="NgayDat" Type="datetime" />
     <Property Name="NgayTra" Type="datetime" />
     <Property Name="ThoiGianDat" Type="datetime" />
+    <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="DichVu">
     <Key>

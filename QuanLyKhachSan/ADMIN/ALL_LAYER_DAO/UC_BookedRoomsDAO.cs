@@ -43,12 +43,17 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
             db.SaveChanges();
             MessageBox.Show("Đã trả phòng! Vui lòng vào mục thanh toán để tính tiền cho khách hàng có mã hóa đơn là: "+a.MaHoaDon);
         }
-        public void Sua(string MaPhong)
+        public void Sua(string MaPhong, string MaDatPhong)
         {
             var p = from k in db.Phongs where k.MaPhong.ToString() == MaPhong select k;
             foreach (var j in p)
             {
                 j.TinhTrang = "empty";
+            }
+            var q = from k in db.DatPhongs where k.MaDatPhong.ToString() == MaDatPhong select k;
+            foreach (var j in q)
+            {
+                j.TinhTrang = "finish";
             }
             db.SaveChanges();
         }

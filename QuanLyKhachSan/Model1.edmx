@@ -23,6 +23,7 @@
           <Property Name="NgayDat" Type="datetime" />
           <Property Name="NgayTra" Type="datetime" />
           <Property Name="ThoiGianDat" Type="datetime" />
+          <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="DichVu">
           <Key>
@@ -289,6 +290,7 @@
           <Property Name="NgayDat" Type="DateTime" Precision="3" />
           <Property Name="NgayTra" Type="DateTime" Precision="3" />
           <Property Name="ThoiGianDat" Type="DateTime" Precision="3" />
+          <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="KhachHang" Relationship="Self.FK__DatPhong__MaKH__440B1D61" FromRole="DatPhong" ToRole="KhachHang" />
           <NavigationProperty Name="Phong" Relationship="Self.FK__DatPhong__MaPhon__44FF419A" FromRole="DatPhong" ToRole="Phong" />
           <NavigationProperty Name="HoaDons" Relationship="Self.FK__HoaDon__MaDatPho__4D94879B" FromRole="DatPhong" ToRole="HoaDon" />
@@ -570,6 +572,7 @@
                 <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
                 <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
                 <ScalarProperty Name="ThoiGianDat" ColumnName="ThoiGianDat" />
+                <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

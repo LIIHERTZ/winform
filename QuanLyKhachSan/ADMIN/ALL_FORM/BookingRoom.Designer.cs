@@ -46,8 +46,10 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_TenKhachHang = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_NgayDat = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_MaKH = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dtp_NgayTraPhong = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dtp_NgayDatPhong = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.SuspendLayout();
             // 
             // btn_Thoat
@@ -61,7 +63,7 @@
             this.btn_Thoat.ForeColor = System.Drawing.Color.White;
             this.btn_Thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_Thoat.Image")));
             this.btn_Thoat.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_Thoat.Location = new System.Drawing.Point(760, 2);
+            this.btn_Thoat.Location = new System.Drawing.Point(716, 1);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(39, 37);
             this.btn_Thoat.TabIndex = 45;
@@ -93,7 +95,7 @@
             this.txt_SoNguoi.PasswordChar = '\0';
             this.txt_SoNguoi.PlaceholderText = "";
             this.txt_SoNguoi.SelectedText = "";
-            this.txt_SoNguoi.Size = new System.Drawing.Size(169, 27);
+            this.txt_SoNguoi.Size = new System.Drawing.Size(178, 27);
             this.txt_SoNguoi.TabIndex = 43;
             // 
             // txt_MaPhong
@@ -122,7 +124,7 @@
             this.txt_MaPhong.PasswordChar = '\0';
             this.txt_MaPhong.PlaceholderText = "";
             this.txt_MaPhong.SelectedText = "";
-            this.txt_MaPhong.Size = new System.Drawing.Size(169, 27);
+            this.txt_MaPhong.Size = new System.Drawing.Size(178, 27);
             this.txt_MaPhong.TabIndex = 42;
             // 
             // txt_ThoiGian
@@ -145,13 +147,13 @@
             this.txt_ThoiGian.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_ThoiGian.ForeColor = System.Drawing.Color.Black;
             this.txt_ThoiGian.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_ThoiGian.Location = new System.Drawing.Point(319, 305);
+            this.txt_ThoiGian.Location = new System.Drawing.Point(70, 482);
             this.txt_ThoiGian.Margin = new System.Windows.Forms.Padding(0);
             this.txt_ThoiGian.Name = "txt_ThoiGian";
             this.txt_ThoiGian.PasswordChar = '\0';
             this.txt_ThoiGian.PlaceholderText = "";
             this.txt_ThoiGian.SelectedText = "";
-            this.txt_ThoiGian.Size = new System.Drawing.Size(169, 27);
+            this.txt_ThoiGian.Size = new System.Drawing.Size(181, 27);
             this.txt_ThoiGian.TabIndex = 41;
             // 
             // txt_GiaTien
@@ -180,7 +182,7 @@
             this.txt_GiaTien.PasswordChar = '\0';
             this.txt_GiaTien.PlaceholderText = "";
             this.txt_GiaTien.SelectedText = "";
-            this.txt_GiaTien.Size = new System.Drawing.Size(169, 27);
+            this.txt_GiaTien.Size = new System.Drawing.Size(181, 27);
             this.txt_GiaTien.TabIndex = 39;
             // 
             // btn_XacNhan
@@ -197,10 +199,10 @@
             this.btn_XacNhan.FillColor = System.Drawing.Color.White;
             this.btn_XacNhan.Font = new System.Drawing.Font("Segoe UI Black", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XacNhan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_XacNhan.Location = new System.Drawing.Point(579, 368);
+            this.btn_XacNhan.Location = new System.Drawing.Point(459, 457);
             this.btn_XacNhan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_XacNhan.Name = "btn_XacNhan";
-            this.btn_XacNhan.Size = new System.Drawing.Size(141, 47);
+            this.btn_XacNhan.Size = new System.Drawing.Size(192, 52);
             this.btn_XacNhan.TabIndex = 37;
             this.btn_XacNhan.Text = "Xác nhận";
             this.btn_XacNhan.Click += new System.EventHandler(this.btn_XacNhan_Click);
@@ -231,7 +233,7 @@
             this.txt_MaDatPhong.PasswordChar = '\0';
             this.txt_MaDatPhong.PlaceholderText = "";
             this.txt_MaDatPhong.SelectedText = "";
-            this.txt_MaDatPhong.Size = new System.Drawing.Size(169, 27);
+            this.txt_MaDatPhong.Size = new System.Drawing.Size(178, 27);
             this.txt_MaDatPhong.TabIndex = 36;
             // 
             // guna2HtmlLabel9
@@ -243,7 +245,7 @@
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(319, 347);
             this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(107, 28);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(169, 28);
             this.guna2HtmlLabel9.TabIndex = 35;
             this.guna2HtmlLabel9.Text = "Số người:";
             // 
@@ -266,10 +268,10 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(319, 271);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(68, 433);
             this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(136, 32);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(167, 32);
             this.guna2HtmlLabel7.TabIndex = 33;
             this.guna2HtmlLabel7.Text = "Thời gian đặt:";
             // 
@@ -279,10 +281,10 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(70, 109);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(72, 100);
             this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(136, 27);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(169, 27);
             this.guna2HtmlLabel6.TabIndex = 32;
             this.guna2HtmlLabel6.Text = "Mã khách hàng:";
             // 
@@ -295,7 +297,7 @@
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(70, 347);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(134, 28);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(165, 28);
             this.guna2HtmlLabel5.TabIndex = 31;
             this.guna2HtmlLabel5.Text = "Giá tiền:";
             // 
@@ -321,9 +323,9 @@
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(70, 267);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(118, 18);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(171, 31);
             this.guna2HtmlLabel3.TabIndex = 29;
-            this.guna2HtmlLabel3.Text = "Ngày đặt:";
+            this.guna2HtmlLabel3.Text = "Ngày đặt phòng:";
             // 
             // guna2HtmlLabel2
             // 
@@ -334,7 +336,7 @@
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(319, 109);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(158, 18);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(158, 27);
             this.guna2HtmlLabel2.TabIndex = 28;
             this.guna2HtmlLabel2.Text = "Mã đặt phòng:";
             // 
@@ -343,10 +345,10 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Black", 23.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(45, 24);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(30, 11);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(166, 44);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(207, 54);
             this.guna2HtmlLabel1.TabIndex = 27;
             this.guna2HtmlLabel1.Text = "Đặt phòng";
             // 
@@ -376,37 +378,8 @@
             this.txt_TenKhachHang.PasswordChar = '\0';
             this.txt_TenKhachHang.PlaceholderText = "";
             this.txt_TenKhachHang.SelectedText = "";
-            this.txt_TenKhachHang.Size = new System.Drawing.Size(169, 27);
+            this.txt_TenKhachHang.Size = new System.Drawing.Size(181, 27);
             this.txt_TenKhachHang.TabIndex = 38;
-            // 
-            // txt_NgayDat
-            // 
-            this.txt_NgayDat.BorderColor = System.Drawing.Color.Black;
-            this.txt_NgayDat.BorderRadius = 10;
-            this.txt_NgayDat.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.txt_NgayDat.BorderThickness = 0;
-            this.txt_NgayDat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_NgayDat.CustomizableEdges.BottomLeft = false;
-            this.txt_NgayDat.CustomizableEdges.BottomRight = false;
-            this.txt_NgayDat.CustomizableEdges.TopLeft = false;
-            this.txt_NgayDat.CustomizableEdges.TopRight = false;
-            this.txt_NgayDat.DefaultText = "";
-            this.txt_NgayDat.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_NgayDat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_NgayDat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_NgayDat.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_NgayDat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_NgayDat.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_NgayDat.ForeColor = System.Drawing.Color.Black;
-            this.txt_NgayDat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_NgayDat.Location = new System.Drawing.Point(70, 305);
-            this.txt_NgayDat.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_NgayDat.Name = "txt_NgayDat";
-            this.txt_NgayDat.PasswordChar = '\0';
-            this.txt_NgayDat.PlaceholderText = "";
-            this.txt_NgayDat.SelectedText = "";
-            this.txt_NgayDat.Size = new System.Drawing.Size(169, 27);
-            this.txt_NgayDat.TabIndex = 46;
             // 
             // txt_MaKH
             // 
@@ -428,24 +401,67 @@
             this.txt_MaKH.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_MaKH.ForeColor = System.Drawing.Color.Black;
             this.txt_MaKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_MaKH.Location = new System.Drawing.Point(70, 138);
+            this.txt_MaKH.Location = new System.Drawing.Point(72, 138);
             this.txt_MaKH.Margin = new System.Windows.Forms.Padding(0);
             this.txt_MaKH.Name = "txt_MaKH";
             this.txt_MaKH.PasswordChar = '\0';
             this.txt_MaKH.PlaceholderText = "";
             this.txt_MaKH.SelectedText = "";
-            this.txt_MaKH.Size = new System.Drawing.Size(169, 27);
+            this.txt_MaKH.Size = new System.Drawing.Size(179, 27);
             this.txt_MaKH.TabIndex = 47;
             this.txt_MaKH.TextChanged += new System.EventHandler(this.txt_MaKH_TextChanged);
+            // 
+            // guna2HtmlLabel10
+            // 
+            this.guna2HtmlLabel10.AutoSize = false;
+            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel10.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(318, 267);
+            this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(170, 31);
+            this.guna2HtmlLabel10.TabIndex = 48;
+            this.guna2HtmlLabel10.Text = "Ngày trả phòng:";
+            // 
+            // dtp_NgayTraPhong
+            // 
+            this.dtp_NgayTraPhong.Checked = true;
+            this.dtp_NgayTraPhong.FillColor = System.Drawing.Color.White;
+            this.dtp_NgayTraPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_NgayTraPhong.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtp_NgayTraPhong.Location = new System.Drawing.Point(318, 300);
+            this.dtp_NgayTraPhong.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_NgayTraPhong.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_NgayTraPhong.Name = "dtp_NgayTraPhong";
+            this.dtp_NgayTraPhong.Size = new System.Drawing.Size(212, 36);
+            this.dtp_NgayTraPhong.TabIndex = 49;
+            this.dtp_NgayTraPhong.Value = new System.DateTime(2024, 4, 27, 17, 33, 44, 834);
+            // 
+            // dtp_NgayDatPhong
+            // 
+            this.dtp_NgayDatPhong.Checked = true;
+            this.dtp_NgayDatPhong.FillColor = System.Drawing.Color.White;
+            this.dtp_NgayDatPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_NgayDatPhong.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtp_NgayDatPhong.Location = new System.Drawing.Point(72, 300);
+            this.dtp_NgayDatPhong.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_NgayDatPhong.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_NgayDatPhong.Name = "dtp_NgayDatPhong";
+            this.dtp_NgayDatPhong.Size = new System.Drawing.Size(212, 36);
+            this.dtp_NgayDatPhong.TabIndex = 50;
+            this.dtp_NgayDatPhong.Value = new System.DateTime(2024, 4, 27, 17, 33, 44, 834);
             // 
             // BookingRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(756, 563);
+            this.Controls.Add(this.dtp_NgayDatPhong);
+            this.Controls.Add(this.dtp_NgayTraPhong);
+            this.Controls.Add(this.guna2HtmlLabel10);
             this.Controls.Add(this.txt_MaKH);
-            this.Controls.Add(this.txt_NgayDat);
             this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.txt_SoNguoi);
             this.Controls.Add(this.txt_MaPhong);
@@ -491,7 +507,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txt_TenKhachHang;
-        private Guna.UI2.WinForms.Guna2TextBox txt_NgayDat;
         private Guna.UI2.WinForms.Guna2TextBox txt_MaKH;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_NgayTraPhong;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_NgayDatPhong;
     }
 }
