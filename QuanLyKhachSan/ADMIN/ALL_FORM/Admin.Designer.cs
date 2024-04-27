@@ -46,13 +46,12 @@
             this.btn_XemPhong = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.pn_HienThi = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_DieuChinhDV = new Guna.UI2.WinForms.Guna2Button();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PanelSlide.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_CheckIn
@@ -63,10 +62,9 @@
             this.btn_CheckIn.ForeColor = System.Drawing.Color.White;
             this.btn_CheckIn.Image = ((System.Drawing.Image)(resources.GetObject("btn_CheckIn.Image")));
             this.btn_CheckIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_CheckIn.Location = new System.Drawing.Point(21, 182);
-            this.btn_CheckIn.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_CheckIn.Location = new System.Drawing.Point(16, 148);
             this.btn_CheckIn.Name = "btn_CheckIn";
-            this.btn_CheckIn.Size = new System.Drawing.Size(245, 66);
+            this.btn_CheckIn.Size = new System.Drawing.Size(184, 54);
             this.btn_CheckIn.TabIndex = 17;
             this.btn_CheckIn.Text = "     Check In";
             this.btn_CheckIn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -81,10 +79,9 @@
             this.btn_LichSuGiaoDich.ForeColor = System.Drawing.Color.White;
             this.btn_LichSuGiaoDich.Image = ((System.Drawing.Image)(resources.GetObject("btn_LichSuGiaoDich.Image")));
             this.btn_LichSuGiaoDich.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_LichSuGiaoDich.Location = new System.Drawing.Point(21, 404);
-            this.btn_LichSuGiaoDich.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_LichSuGiaoDich.Location = new System.Drawing.Point(16, 328);
             this.btn_LichSuGiaoDich.Name = "btn_LichSuGiaoDich";
-            this.btn_LichSuGiaoDich.Size = new System.Drawing.Size(245, 66);
+            this.btn_LichSuGiaoDich.Size = new System.Drawing.Size(184, 54);
             this.btn_LichSuGiaoDich.TabIndex = 18;
             this.btn_LichSuGiaoDich.Text = "     Lịch sử";
             this.btn_LichSuGiaoDich.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -98,10 +95,9 @@
             this.btn_DichVu.ForeColor = System.Drawing.Color.White;
             this.btn_DichVu.Image = ((System.Drawing.Image)(resources.GetObject("btn_DichVu.Image")));
             this.btn_DichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_DichVu.Location = new System.Drawing.Point(21, 551);
-            this.btn_DichVu.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_DichVu.Location = new System.Drawing.Point(16, 448);
             this.btn_DichVu.Name = "btn_DichVu";
-            this.btn_DichVu.Size = new System.Drawing.Size(245, 66);
+            this.btn_DichVu.Size = new System.Drawing.Size(184, 54);
             this.btn_DichVu.TabIndex = 11;
             this.btn_DichVu.Text = "     Dịch vụ";
             this.btn_DichVu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -115,10 +111,10 @@
             this.panel6.Controls.Add(this.button6);
             this.panel6.Controls.Add(this.button5);
             this.panel6.Controls.Add(this.button7);
-            this.panel6.Location = new System.Drawing.Point(3, 57);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Location = new System.Drawing.Point(3, 13);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(55, 752);
+            this.panel6.Size = new System.Drawing.Size(41, 611);
             this.panel6.TabIndex = 22;
             // 
             // button8
@@ -126,10 +122,10 @@
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(11, 704);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button8.Location = new System.Drawing.Point(8, 572);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(37, 36);
+            this.button8.Size = new System.Drawing.Size(28, 29);
             this.button8.TabIndex = 4;
             this.button8.UseVisualStyleBackColor = true;
             // 
@@ -138,10 +134,10 @@
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(11, 649);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Location = new System.Drawing.Point(8, 527);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(37, 36);
+            this.button6.Size = new System.Drawing.Size(28, 29);
             this.button6.TabIndex = 2;
             this.button6.UseVisualStyleBackColor = true;
             // 
@@ -150,10 +146,10 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(11, 14);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(8, 11);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(37, 36);
+            this.button5.Size = new System.Drawing.Size(28, 29);
             this.button5.TabIndex = 2;
             this.button5.UseVisualStyleBackColor = true;
             // 
@@ -162,20 +158,19 @@
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(12, 750);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button7.Location = new System.Drawing.Point(9, 609);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(37, 36);
+            this.button7.Size = new System.Drawing.Size(28, 29);
             this.button7.TabIndex = 3;
             this.button7.UseVisualStyleBackColor = true;
             // 
             // SidePanel
             // 
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.SidePanel.Location = new System.Drawing.Point(3, 108);
-            this.SidePanel.Margin = new System.Windows.Forms.Padding(4);
+            this.SidePanel.Location = new System.Drawing.Point(2, 88);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(11, 66);
+            this.SidePanel.Size = new System.Drawing.Size(8, 54);
             this.SidePanel.TabIndex = 10;
             // 
             // btn_ThongTinKhachHang
@@ -186,10 +181,9 @@
             this.btn_ThongTinKhachHang.ForeColor = System.Drawing.Color.White;
             this.btn_ThongTinKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThongTinKhachHang.Image")));
             this.btn_ThongTinKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ThongTinKhachHang.Location = new System.Drawing.Point(21, 478);
-            this.btn_ThongTinKhachHang.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ThongTinKhachHang.Location = new System.Drawing.Point(16, 388);
             this.btn_ThongTinKhachHang.Name = "btn_ThongTinKhachHang";
-            this.btn_ThongTinKhachHang.Size = new System.Drawing.Size(245, 66);
+            this.btn_ThongTinKhachHang.Size = new System.Drawing.Size(184, 54);
             this.btn_ThongTinKhachHang.TabIndex = 15;
             this.btn_ThongTinKhachHang.Text = "     Khách hàng";
             this.btn_ThongTinKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -203,10 +197,9 @@
             this.btn_XemPhongDat.ForeColor = System.Drawing.Color.White;
             this.btn_XemPhongDat.Image = ((System.Drawing.Image)(resources.GetObject("btn_XemPhongDat.Image")));
             this.btn_XemPhongDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_XemPhongDat.Location = new System.Drawing.Point(21, 256);
-            this.btn_XemPhongDat.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_XemPhongDat.Location = new System.Drawing.Point(16, 208);
             this.btn_XemPhongDat.Name = "btn_XemPhongDat";
-            this.btn_XemPhongDat.Size = new System.Drawing.Size(245, 66);
+            this.btn_XemPhongDat.Size = new System.Drawing.Size(184, 54);
             this.btn_XemPhongDat.TabIndex = 12;
             this.btn_XemPhongDat.Text = "     Phòng đã đặt";
             this.btn_XemPhongDat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -221,10 +214,9 @@
             this.btn_ThanhToan.ForeColor = System.Drawing.Color.White;
             this.btn_ThanhToan.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThanhToan.Image")));
             this.btn_ThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ThanhToan.Location = new System.Drawing.Point(21, 330);
-            this.btn_ThanhToan.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ThanhToan.Location = new System.Drawing.Point(16, 268);
             this.btn_ThanhToan.Name = "btn_ThanhToan";
-            this.btn_ThanhToan.Size = new System.Drawing.Size(245, 66);
+            this.btn_ThanhToan.Size = new System.Drawing.Size(184, 54);
             this.btn_ThanhToan.TabIndex = 13;
             this.btn_ThanhToan.Text = "     Thanh toán";
             this.btn_ThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -235,10 +227,9 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(43, -27);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(32, -22);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(181, 158);
+            this.pictureBox2.Size = new System.Drawing.Size(136, 128);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
@@ -256,10 +247,9 @@
             this.PanelSlide.Controls.Add(this.btn_XemPhong);
             this.PanelSlide.Controls.Add(this.button2);
             this.PanelSlide.Controls.Add(this.pictureBox2);
-            this.PanelSlide.Location = new System.Drawing.Point(75, 59);
-            this.PanelSlide.Margin = new System.Windows.Forms.Padding(4);
+            this.PanelSlide.Location = new System.Drawing.Point(57, 15);
             this.PanelSlide.Name = "PanelSlide";
-            this.PanelSlide.Size = new System.Drawing.Size(275, 751);
+            this.PanelSlide.Size = new System.Drawing.Size(206, 610);
             this.PanelSlide.TabIndex = 23;
             // 
             // btn_XemPhong
@@ -270,10 +260,9 @@
             this.btn_XemPhong.ForeColor = System.Drawing.Color.White;
             this.btn_XemPhong.Image = ((System.Drawing.Image)(resources.GetObject("btn_XemPhong.Image")));
             this.btn_XemPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_XemPhong.Location = new System.Drawing.Point(21, 108);
-            this.btn_XemPhong.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_XemPhong.Location = new System.Drawing.Point(16, 88);
             this.btn_XemPhong.Name = "btn_XemPhong";
-            this.btn_XemPhong.Size = new System.Drawing.Size(245, 66);
+            this.btn_XemPhong.Size = new System.Drawing.Size(184, 54);
             this.btn_XemPhong.TabIndex = 14;
             this.btn_XemPhong.Text = "     Xem phòng";
             this.btn_XemPhong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -288,10 +277,9 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(29, 671);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(16, 553);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(245, 66);
+            this.button2.Size = new System.Drawing.Size(184, 54);
             this.button2.TabIndex = 16;
             this.button2.Text = "       Logout";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -304,25 +292,13 @@
             this.btn_Thoat.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Thoat.ForeColor = System.Drawing.Color.White;
             this.btn_Thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_Thoat.Image")));
-            this.btn_Thoat.Location = new System.Drawing.Point(1391, 4);
-            this.btn_Thoat.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Thoat.Location = new System.Drawing.Point(1066, 3);
             this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(43, 43);
+            this.btn_Thoat.Size = new System.Drawing.Size(32, 35);
             this.btn_Thoat.TabIndex = 25;
             this.btn_Thoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Thoat.UseVisualStyleBackColor = true;
             this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel2.Controls.Add(this.btn_Refresh);
-            this.panel2.Controls.Add(this.btn_Thoat);
-            this.panel2.Location = new System.Drawing.Point(3, 6);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1464, 47);
-            this.panel2.TabIndex = 25;
             // 
             // btn_Refresh
             // 
@@ -331,10 +307,9 @@
             this.btn_Refresh.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Refresh.ForeColor = System.Drawing.Color.White;
             this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
-            this.btn_Refresh.Location = new System.Drawing.Point(1340, 4);
-            this.btn_Refresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Refresh.Location = new System.Drawing.Point(1028, 3);
             this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(43, 43);
+            this.btn_Refresh.Size = new System.Drawing.Size(32, 35);
             this.btn_Refresh.TabIndex = 27;
             this.btn_Refresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Refresh.UseVisualStyleBackColor = true;
@@ -343,31 +318,48 @@
             // pn_HienThi
             // 
             this.pn_HienThi.AutoScroll = true;
-            this.pn_HienThi.Location = new System.Drawing.Point(364, 95);
-            this.pn_HienThi.Margin = new System.Windows.Forms.Padding(4);
+            this.pn_HienThi.Location = new System.Drawing.Point(274, 44);
             this.pn_HienThi.Name = "pn_HienThi";
-            this.pn_HienThi.Size = new System.Drawing.Size(1103, 678);
+            this.pn_HienThi.Size = new System.Drawing.Size(827, 551);
             this.pn_HienThi.TabIndex = 26;
+            // 
+            // btn_DieuChinhDV
+            // 
+            this.btn_DieuChinhDV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_DieuChinhDV.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_DieuChinhDV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DieuChinhDV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DieuChinhDV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DieuChinhDV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DieuChinhDV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_DieuChinhDV.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DieuChinhDV.ForeColor = System.Drawing.Color.White;
+            this.btn_DieuChinhDV.Location = new System.Drawing.Point(545, 601);
+            this.btn_DieuChinhDV.Name = "btn_DieuChinhDV";
+            this.btn_DieuChinhDV.Size = new System.Drawing.Size(274, 50);
+            this.btn_DieuChinhDV.TabIndex = 28;
+            this.btn_DieuChinhDV.Text = "Điều chỉnh dịch vụ";
+            this.btn_DieuChinhDV.Click += new System.EventHandler(this.btn_DieuChinhDV_Click);
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(1500, 806);
+            this.ClientSize = new System.Drawing.Size(1125, 655);
+            this.Controls.Add(this.btn_DieuChinhDV);
+            this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.pn_HienThi);
+            this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.PanelSlide);
-            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.PanelSlide.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -391,8 +383,8 @@
         private System.Windows.Forms.Button btn_XemPhong;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_Thoat;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel pn_HienThi;
         private System.Windows.Forms.Button btn_Refresh;
+        private Guna.UI2.WinForms.Guna2Button btn_DieuChinhDV;
     }
 }

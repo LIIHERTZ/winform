@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|c:\\users\\asus\\desktop\\data_engineer\\lap_trinh_windows\\doanwinform_chinhthuc\\do_an_cuoi_ky_winform\\quanlykhachsan\\admin\\all_form\\fixservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|solutionrelative:admin\\all_form\\fixservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|c:\\users\\asus\\desktop\\data_engineer\\lap_trinh_windows\\doanwinform_chinhthuc\\do_an_cuoi_ky_winform\\quanlykhachsan\\admin\\all_form\\fixservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|solutionrelative:admin\\all_form\\fixservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|c:\\users\\asus\\desktop\\data_engineer\\lap_trinh_windows\\doanwinform_chinhthuc\\do_an_cuoi_ky_winform\\quanlykhachsan\\admin\\all_layer_dao\\fixservicedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|solutionrelative:admin\\all_layer_dao\\fixservicedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +31,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FixServiceDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_LAYER_DAO\\FixServiceDAO.cs",
+              "RelativeDocumentMoniker": "ADMIN\\ALL_LAYER_DAO\\FixServiceDAO.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_LAYER_DAO\\FixServiceDAO.cs",
+              "RelativeToolTip": "ADMIN\\ALL_LAYER_DAO\\FixServiceDAO.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T06:52:42.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FixService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_FORM\\FixService.cs",
+              "RelativeDocumentMoniker": "ADMIN\\ALL_FORM\\FixService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_FORM\\FixService.cs",
+              "RelativeToolTip": "ADMIN\\ALL_FORM\\FixService.cs",
+              "ViewState": "AQIAAKoAAAAAAAAAAAAkwL8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T06:38:15.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FixService.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_FORM\\FixService.cs",
+              "RelativeDocumentMoniker": "ADMIN\\ALL_FORM\\FixService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_FORM\\FixService.cs [Design]",
+              "RelativeToolTip": "ADMIN\\ALL_FORM\\FixService.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T06:32:41.02Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

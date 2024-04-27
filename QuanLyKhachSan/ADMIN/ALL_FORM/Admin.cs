@@ -24,6 +24,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
         {
             InitializeComponent();
             tendnNV = s;
+            btn_DieuChinhDV.Visible = false;
+            btn_DieuChinhDV.Enabled = false;
 
         }
 
@@ -40,38 +42,51 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             admin = new AdminDAO();
             admin.loadAllUCRooms(pn_HienThi);
         }
-
-        private void btn_Refresh_Click(object sender, EventArgs e)
+        public void Refresh()
         {
             pn_HienThi.Controls.Clear();
+            btn_DieuChinhDV.Enabled = false;
+            btn_DieuChinhDV.Visible = false;
+        }
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            Refresh();
         }
 
         private void btn_XemPhongDat_Click(object sender, EventArgs e)
         {
-            pn_HienThi.Controls.Clear();
+            Refresh();
             admin = new AdminDAO();
             admin.loadAllUCBookedRooms(pn_HienThi,tendnNV);
         }
 
         private void btn_ThanhToan_Click(object sender, EventArgs e)
         {
-            pn_HienThi.Controls.Clear();
+            Refresh();
             admin = new AdminDAO();
             admin.loadThanhToan(pn_HienThi);
         }
 
         private void btn_CheckIn_Click(object sender, EventArgs e)
         {
-            pn_HienThi.Controls.Clear();
+            Refresh();
             admin = new AdminDAO();
             admin.loadAllUCReserveRooms(pn_HienThi, tendnNV);
         }
 
         private void btn_DichVu_Click(object sender, EventArgs e)
         {
-            pn_HienThi.Controls.Clear();
+            Refresh();
             admin = new AdminDAO();
             admin.loadAllUCServices(pn_HienThi);
+            btn_DieuChinhDV.Enabled = true;
+            btn_DieuChinhDV.Visible = true;
+        }
+
+        private void btn_DieuChinhDV_Click(object sender, EventArgs e)
+        {
+            FixService a = new FixService();
+            a.ShowDialog();
         }
     }
 }

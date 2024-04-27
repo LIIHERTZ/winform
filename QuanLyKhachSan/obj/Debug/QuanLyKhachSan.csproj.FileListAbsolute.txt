@@ -79,7 +79,6 @@ C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_a
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.AssemblyReference.cache
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_FORM.Admin.resources
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_FORM.BookingRoom.resources
-C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_FORM.Service.resources
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_USER_CONTROL.UC_BookedRooms.resources
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_USER_CONTROL.UC_Pay.resources
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_USER_CONTROL.UC_ReserveRooms.resources
@@ -93,3 +92,4 @@ C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_a
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_FORM.BuyService.resources
+C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_FORM.FixService.resources

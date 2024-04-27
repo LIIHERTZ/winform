@@ -44,7 +44,7 @@
             this.lbl_GiaTien.BackColor = System.Drawing.Color.Transparent;
             this.lbl_GiaTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_GiaTien.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lbl_GiaTien.Location = new System.Drawing.Point(158, 312);
+            this.lbl_GiaTien.Location = new System.Drawing.Point(158, 311);
             this.lbl_GiaTien.Margin = new System.Windows.Forms.Padding(2);
             this.lbl_GiaTien.Name = "lbl_GiaTien";
             this.lbl_GiaTien.Size = new System.Drawing.Size(41, 22);
@@ -112,7 +112,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(68, 311);
+            this.label3.Location = new System.Drawing.Point(55, 311);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 23);
             this.label3.TabIndex = 37;

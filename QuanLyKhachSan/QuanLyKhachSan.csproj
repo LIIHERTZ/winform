@@ -79,16 +79,16 @@
     <Compile Include="ADMIN\ALL_FORM\BuyService.Designer.cs">
       <DependentUpon>BuyService.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADMIN\ALL_FORM\Service.cs">
+    <Compile Include="ADMIN\ALL_FORM\FixService.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ADMIN\ALL_FORM\Service.Designer.cs">
-      <DependentUpon>Service.cs</DependentUpon>
+    <Compile Include="ADMIN\ALL_FORM\FixService.Designer.cs">
+      <DependentUpon>FixService.cs</DependentUpon>
     </Compile>
     <Compile Include="ADMIN\ALL_LAYER_DAO\AdminDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\BookingRoomDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\BuyServiceDAO.cs" />
-    <Compile Include="ADMIN\ALL_LAYER_DAO\ServiceDAO.cs" />
+    <Compile Include="ADMIN\ALL_LAYER_DAO\FixServiceDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_ReseverRoomsDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_BookedRoomsDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_PayDAO.cs" />
@@ -186,8 +186,8 @@
     <EmbeddedResource Include="ADMIN\ALL_FORM\BuyService.resx">
       <DependentUpon>BuyService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ADMIN\ALL_FORM\Service.resx">
-      <DependentUpon>Service.cs</DependentUpon>
+    <EmbeddedResource Include="ADMIN\ALL_FORM\FixService.resx">
+      <DependentUpon>FixService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_BookedRooms.resx">
       <DependentUpon>UC_BookedRooms.cs</DependentUpon>
