@@ -93,3 +93,6 @@ C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_a
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_FORM.BuyService.resources
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_FORM.FixService.resources
+C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_USER_CONTROL.UC_History.resources
+C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_FORM.CustomerDetail.resources
+C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Do_an_cuoi_ky_WinForm\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_USER_CONTROL.UC_Customer.resources

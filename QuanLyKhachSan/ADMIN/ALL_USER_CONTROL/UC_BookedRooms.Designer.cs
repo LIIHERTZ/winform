@@ -51,6 +51,8 @@
             this.lbl_TenKH = new System.Windows.Forms.Label();
             this.lbl_NgayDat = new System.Windows.Forms.Label();
             this.lbl_ThoiGianDat = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_NgayTra = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Anh)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +85,7 @@
             this.lbl_TinhTrang.Location = new System.Drawing.Point(317, 94);
             this.lbl_TinhTrang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_TinhTrang.Name = "lbl_TinhTrang";
-            this.lbl_TinhTrang.Size = new System.Drawing.Size(46, 20);
+            this.lbl_TinhTrang.Size = new System.Drawing.Size(59, 25);
             this.lbl_TinhTrang.TabIndex = 67;
             this.lbl_TinhTrang.Text = "trống";
             // 
@@ -95,7 +97,7 @@
             this.label8.Location = new System.Drawing.Point(205, 67);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 20);
+            this.label8.Size = new System.Drawing.Size(113, 25);
             this.label8.TabIndex = 64;
             this.label8.Text = "Loại phòng:";
             // 
@@ -107,7 +109,7 @@
             this.label7.Location = new System.Drawing.Point(205, 94);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 20);
+            this.label7.Size = new System.Drawing.Size(107, 25);
             this.label7.TabIndex = 63;
             this.label7.Text = "Tình trạng:";
             // 
@@ -119,7 +121,7 @@
             this.lbl_LoaiPhong.Location = new System.Drawing.Point(317, 67);
             this.lbl_LoaiPhong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_LoaiPhong.Name = "lbl_LoaiPhong";
-            this.lbl_LoaiPhong.Size = new System.Drawing.Size(46, 20);
+            this.lbl_LoaiPhong.Size = new System.Drawing.Size(59, 25);
             this.lbl_LoaiPhong.TabIndex = 61;
             this.lbl_LoaiPhong.Text = "trống";
             // 
@@ -131,7 +133,7 @@
             this.lbl_MaPhong.Location = new System.Drawing.Point(317, 40);
             this.lbl_MaPhong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_MaPhong.Name = "lbl_MaPhong";
-            this.lbl_MaPhong.Size = new System.Drawing.Size(46, 20);
+            this.lbl_MaPhong.Size = new System.Drawing.Size(59, 25);
             this.lbl_MaPhong.TabIndex = 60;
             this.lbl_MaPhong.Text = "trống";
             // 
@@ -143,7 +145,7 @@
             this.lb_songuoi.Location = new System.Drawing.Point(313, 70);
             this.lb_songuoi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_songuoi.Name = "lb_songuoi";
-            this.lb_songuoi.Size = new System.Drawing.Size(0, 17);
+            this.lb_songuoi.Size = new System.Drawing.Size(0, 21);
             this.lb_songuoi.TabIndex = 59;
             // 
             // lb_gia
@@ -154,7 +156,7 @@
             this.lb_gia.Location = new System.Drawing.Point(33, 92);
             this.lb_gia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_gia.Name = "lb_gia";
-            this.lb_gia.Size = new System.Drawing.Size(0, 17);
+            this.lb_gia.Size = new System.Drawing.Size(0, 21);
             this.lb_gia.TabIndex = 57;
             // 
             // lb_mota
@@ -165,7 +167,7 @@
             this.lb_mota.Location = new System.Drawing.Point(313, 43);
             this.lb_mota.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_mota.Name = "lb_mota";
-            this.lb_mota.Size = new System.Drawing.Size(0, 17);
+            this.lb_mota.Size = new System.Drawing.Size(0, 21);
             this.lb_mota.TabIndex = 56;
             // 
             // lb_maloaiphong
@@ -176,7 +178,7 @@
             this.lb_maloaiphong.Location = new System.Drawing.Point(313, 13);
             this.lb_maloaiphong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_maloaiphong.Name = "lb_maloaiphong";
-            this.lb_maloaiphong.Size = new System.Drawing.Size(0, 17);
+            this.lb_maloaiphong.Size = new System.Drawing.Size(0, 21);
             this.lb_maloaiphong.TabIndex = 55;
             // 
             // label3
@@ -187,7 +189,7 @@
             this.label3.Location = new System.Drawing.Point(207, 40);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.Size = new System.Drawing.Size(104, 25);
             this.label3.TabIndex = 52;
             this.label3.Text = "Mã phòng:";
             // 
@@ -209,7 +211,7 @@
             this.label1.Location = new System.Drawing.Point(205, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 20);
+            this.label1.Size = new System.Drawing.Size(138, 25);
             this.label1.TabIndex = 70;
             this.label1.Text = "Mã đặt phòng:";
             // 
@@ -221,7 +223,7 @@
             this.lbl_MaDatPhong.Location = new System.Drawing.Point(317, 10);
             this.lbl_MaDatPhong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_MaDatPhong.Name = "lbl_MaDatPhong";
-            this.lbl_MaDatPhong.Size = new System.Drawing.Size(46, 20);
+            this.lbl_MaDatPhong.Size = new System.Drawing.Size(59, 25);
             this.lbl_MaDatPhong.TabIndex = 71;
             this.lbl_MaDatPhong.Text = "trống";
             // 
@@ -233,7 +235,7 @@
             this.dxds.Location = new System.Drawing.Point(434, 10);
             this.dxds.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dxds.Name = "dxds";
-            this.dxds.Size = new System.Drawing.Size(121, 20);
+            this.dxds.Size = new System.Drawing.Size(150, 25);
             this.dxds.TabIndex = 72;
             this.dxds.Text = "Mã khách hàng:";
             // 
@@ -245,7 +247,7 @@
             this.label2.Location = new System.Drawing.Point(434, 40);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 20);
+            this.label2.Size = new System.Drawing.Size(155, 25);
             this.label2.TabIndex = 73;
             this.label2.Text = "Tên khách hàng:";
             // 
@@ -257,7 +259,7 @@
             this.label4.Location = new System.Drawing.Point(434, 67);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 20);
+            this.label4.Size = new System.Drawing.Size(98, 25);
             this.label4.TabIndex = 74;
             this.label4.Text = "Ngày đặt:";
             // 
@@ -266,10 +268,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(434, 94);
+            this.label5.Location = new System.Drawing.Point(211, 119);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 20);
+            this.label5.Size = new System.Drawing.Size(132, 25);
             this.label5.TabIndex = 75;
             this.label5.Text = "Thời gian đặt:";
             // 
@@ -281,7 +283,7 @@
             this.lbl_MaKH.Location = new System.Drawing.Point(562, 10);
             this.lbl_MaKH.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_MaKH.Name = "lbl_MaKH";
-            this.lbl_MaKH.Size = new System.Drawing.Size(46, 20);
+            this.lbl_MaKH.Size = new System.Drawing.Size(59, 25);
             this.lbl_MaKH.TabIndex = 76;
             this.lbl_MaKH.Text = "trống";
             // 
@@ -293,7 +295,7 @@
             this.lbl_TenKH.Location = new System.Drawing.Point(562, 40);
             this.lbl_TenKH.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_TenKH.Name = "lbl_TenKH";
-            this.lbl_TenKH.Size = new System.Drawing.Size(46, 20);
+            this.lbl_TenKH.Size = new System.Drawing.Size(59, 25);
             this.lbl_TenKH.TabIndex = 77;
             this.lbl_TenKH.Text = "trống";
             // 
@@ -305,7 +307,7 @@
             this.lbl_NgayDat.Location = new System.Drawing.Point(562, 67);
             this.lbl_NgayDat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_NgayDat.Name = "lbl_NgayDat";
-            this.lbl_NgayDat.Size = new System.Drawing.Size(46, 20);
+            this.lbl_NgayDat.Size = new System.Drawing.Size(59, 25);
             this.lbl_NgayDat.TabIndex = 78;
             this.lbl_NgayDat.Text = "trống";
             // 
@@ -314,18 +316,44 @@
             this.lbl_ThoiGianDat.AutoSize = true;
             this.lbl_ThoiGianDat.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ThoiGianDat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_ThoiGianDat.Location = new System.Drawing.Point(562, 94);
+            this.lbl_ThoiGianDat.Location = new System.Drawing.Point(357, 119);
             this.lbl_ThoiGianDat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ThoiGianDat.Name = "lbl_ThoiGianDat";
-            this.lbl_ThoiGianDat.Size = new System.Drawing.Size(46, 20);
+            this.lbl_ThoiGianDat.Size = new System.Drawing.Size(59, 25);
             this.lbl_ThoiGianDat.TabIndex = 79;
             this.lbl_ThoiGianDat.Text = "trống";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(434, 92);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(118, 31);
+            this.label6.TabIndex = 80;
+            this.label6.Text = "Ngày trả:";
+            // 
+            // lbl_NgayTra
+            // 
+            this.lbl_NgayTra.AutoSize = true;
+            this.lbl_NgayTra.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayTra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_NgayTra.Location = new System.Drawing.Point(562, 92);
+            this.lbl_NgayTra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_NgayTra.Name = "lbl_NgayTra";
+            this.lbl_NgayTra.Size = new System.Drawing.Size(59, 25);
+            this.lbl_NgayTra.TabIndex = 81;
+            this.lbl_NgayTra.Text = "trống";
             // 
             // UC_BookedRooms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.lbl_NgayTra);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.lbl_ThoiGianDat);
             this.Controls.Add(this.lbl_NgayDat);
             this.Controls.Add(this.lbl_TenKH);
@@ -382,5 +410,7 @@
         private System.Windows.Forms.Label lbl_TenKH;
         private System.Windows.Forms.Label lbl_NgayDat;
         private System.Windows.Forms.Label lbl_ThoiGianDat;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl_NgayTra;
     }
 }

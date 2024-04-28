@@ -34,7 +34,6 @@
             this.txt_MaPhong = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_ThoiGian = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_GiaTien = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_XacNhan = new Guna.UI2.WinForms.Guna2Button();
             this.txt_MaDatPhong = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -50,6 +49,7 @@
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dtp_NgayTraPhong = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtp_NgayDatPhong = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.btn_XacNhan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Thoat
@@ -184,28 +184,6 @@
             this.txt_GiaTien.SelectedText = "";
             this.txt_GiaTien.Size = new System.Drawing.Size(181, 27);
             this.txt_GiaTien.TabIndex = 39;
-            // 
-            // btn_XacNhan
-            // 
-            this.btn_XacNhan.AllowDrop = true;
-            this.btn_XacNhan.BorderRadius = 25;
-            this.btn_XacNhan.BorderThickness = 1;
-            this.btn_XacNhan.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
-            this.btn_XacNhan.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.btn_XacNhan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_XacNhan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_XacNhan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_XacNhan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_XacNhan.FillColor = System.Drawing.Color.White;
-            this.btn_XacNhan.Font = new System.Drawing.Font("Segoe UI Black", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XacNhan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_XacNhan.Location = new System.Drawing.Point(459, 457);
-            this.btn_XacNhan.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_XacNhan.Name = "btn_XacNhan";
-            this.btn_XacNhan.Size = new System.Drawing.Size(192, 52);
-            this.btn_XacNhan.TabIndex = 37;
-            this.btn_XacNhan.Text = "Xác nhận";
-            this.btn_XacNhan.Click += new System.EventHandler(this.btn_XacNhan_Click);
             // 
             // txt_MaDatPhong
             // 
@@ -452,12 +430,26 @@
             this.dtp_NgayDatPhong.TabIndex = 50;
             this.dtp_NgayDatPhong.Value = new System.DateTime(2024, 4, 27, 17, 33, 44, 834);
             // 
+            // btn_XacNhan
+            // 
+            this.btn_XacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XacNhan.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XacNhan.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_XacNhan.Location = new System.Drawing.Point(418, 462);
+            this.btn_XacNhan.Name = "btn_XacNhan";
+            this.btn_XacNhan.Size = new System.Drawing.Size(212, 63);
+            this.btn_XacNhan.TabIndex = 96;
+            this.btn_XacNhan.Text = "XÁC NHẬN";
+            this.btn_XacNhan.UseVisualStyleBackColor = true;
+            this.btn_XacNhan.Click += new System.EventHandler(this.btn_XacNhan_Click);
+            // 
             // BookingRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(756, 563);
+            this.Controls.Add(this.btn_XacNhan);
             this.Controls.Add(this.dtp_NgayDatPhong);
             this.Controls.Add(this.dtp_NgayTraPhong);
             this.Controls.Add(this.guna2HtmlLabel10);
@@ -468,7 +460,6 @@
             this.Controls.Add(this.txt_ThoiGian);
             this.Controls.Add(this.txt_GiaTien);
             this.Controls.Add(this.txt_TenKhachHang);
-            this.Controls.Add(this.btn_XacNhan);
             this.Controls.Add(this.txt_MaDatPhong);
             this.Controls.Add(this.guna2HtmlLabel9);
             this.Controls.Add(this.guna2HtmlLabel8);
@@ -495,7 +486,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_MaPhong;
         private Guna.UI2.WinForms.Guna2TextBox txt_ThoiGian;
         private Guna.UI2.WinForms.Guna2TextBox txt_GiaTien;
-        private Guna.UI2.WinForms.Guna2Button btn_XacNhan;
         private Guna.UI2.WinForms.Guna2TextBox txt_MaDatPhong;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
@@ -511,5 +501,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_NgayTraPhong;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_NgayDatPhong;
+        private System.Windows.Forms.Button btn_XacNhan;
     }
 }

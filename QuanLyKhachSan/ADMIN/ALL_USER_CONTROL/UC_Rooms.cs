@@ -25,7 +25,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
         public UC_Rooms(Phong a, LoaiPhong b)
         {
             InitializeComponent();
-            lbl_GiaTien.Text = b.Gia.ToString();
+            lbl_GiaTien.Text = b.Gia.ToString() + " vnđ";
             lbl_TinhTrang.Text = a.TinhTrang;
             lbl_MaLoaiPhong.Text = a.MaPhong.ToString();
             lbl_LoaiPhong.Text = b.MaLoaiPhong;

@@ -33,6 +33,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
             lbl_TenKH.Text = booked.layTenKhachHang(c.MaKH.ToString());
             string day = c.NgayDat.ToString();
             lbl_NgayDat.Text = day.Substring(0, 10);
+            string day1 = c.NgayTra.ToString();
+            lbl_NgayTra.Text = day1.Substring(0, 10);
             string time = c.ThoiGianDat.ToString();
             lbl_ThoiGianDat.Text = time.Substring(10, 10);
             string image = Path.Combine(appDirectory, b.Anh);
@@ -55,8 +57,6 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
                 a.TinhTrang = "wait";
                 booked.Sua(lbl_MaPhong.Text,lbl_MaDatPhong.Text);
                 booked.ThemHoaDon(a);
-                AdminDAO admin =  new AdminDAO();
-                admin.RefreshBookedRooms();
 
             }
         }

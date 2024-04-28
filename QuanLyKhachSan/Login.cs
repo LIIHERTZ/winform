@@ -30,7 +30,7 @@ namespace QuanLyKhachSan
             {
                 this.Hide();
                 Admin admin = new Admin(txt_TenDangNhap.Text);
-                admin.ShowDialog();
+                admin.ShowDialog(this);
             }
             else
             {
@@ -69,6 +69,14 @@ namespace QuanLyKhachSan
         private void chb_KhachHang_CheckedChanged(object sender, EventArgs e)
         {
             chucvu = "kh";
+        }
+        public void ShowLoginForm()
+        {
+            this.Show(); // Hiển thị lại form đăng nhập
+            txt_MatKhau.ResetText();
+            chb_KhachHang.Checked = false;
+            chb_NhanVien.Checked = false;
+            chucvu = "";
         }
     }
 }

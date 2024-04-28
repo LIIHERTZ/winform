@@ -39,12 +39,12 @@
             this.button7 = new System.Windows.Forms.Button();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.btn_ThongTinKhachHang = new System.Windows.Forms.Button();
-            this.btn_XemPhongDat = new System.Windows.Forms.Button();
             this.btn_ThanhToan = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PanelSlide = new System.Windows.Forms.Panel();
+            this.btn_XemPhongDat = new System.Windows.Forms.Button();
             this.btn_XemPhong = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_LogOut = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.pn_HienThi = new System.Windows.Forms.FlowLayoutPanel();
@@ -86,6 +86,7 @@
             this.btn_LichSuGiaoDich.Text = "     Lịch sử";
             this.btn_LichSuGiaoDich.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_LichSuGiaoDich.UseVisualStyleBackColor = true;
+            this.btn_LichSuGiaoDich.Click += new System.EventHandler(this.btn_LichSuGiaoDich_Click);
             // 
             // btn_DichVu
             // 
@@ -188,23 +189,7 @@
             this.btn_ThongTinKhachHang.Text = "     Khách hàng";
             this.btn_ThongTinKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_ThongTinKhachHang.UseVisualStyleBackColor = true;
-            // 
-            // btn_XemPhongDat
-            // 
-            this.btn_XemPhongDat.FlatAppearance.BorderSize = 0;
-            this.btn_XemPhongDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XemPhongDat.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XemPhongDat.ForeColor = System.Drawing.Color.White;
-            this.btn_XemPhongDat.Image = ((System.Drawing.Image)(resources.GetObject("btn_XemPhongDat.Image")));
-            this.btn_XemPhongDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_XemPhongDat.Location = new System.Drawing.Point(16, 208);
-            this.btn_XemPhongDat.Name = "btn_XemPhongDat";
-            this.btn_XemPhongDat.Size = new System.Drawing.Size(184, 54);
-            this.btn_XemPhongDat.TabIndex = 12;
-            this.btn_XemPhongDat.Text = "     Phòng đã đặt";
-            this.btn_XemPhongDat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_XemPhongDat.UseVisualStyleBackColor = true;
-            this.btn_XemPhongDat.Click += new System.EventHandler(this.btn_XemPhongDat_Click);
+            this.btn_ThongTinKhachHang.Click += new System.EventHandler(this.btn_ThongTinKhachHang_Click);
             // 
             // btn_ThanhToan
             // 
@@ -245,12 +230,29 @@
             this.PanelSlide.Controls.Add(this.btn_DichVu);
             this.PanelSlide.Controls.Add(this.btn_XemPhongDat);
             this.PanelSlide.Controls.Add(this.btn_XemPhong);
-            this.PanelSlide.Controls.Add(this.button2);
+            this.PanelSlide.Controls.Add(this.btn_LogOut);
             this.PanelSlide.Controls.Add(this.pictureBox2);
             this.PanelSlide.Location = new System.Drawing.Point(57, 15);
             this.PanelSlide.Name = "PanelSlide";
             this.PanelSlide.Size = new System.Drawing.Size(206, 610);
             this.PanelSlide.TabIndex = 23;
+            // 
+            // btn_XemPhongDat
+            // 
+            this.btn_XemPhongDat.FlatAppearance.BorderSize = 0;
+            this.btn_XemPhongDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XemPhongDat.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XemPhongDat.ForeColor = System.Drawing.Color.White;
+            this.btn_XemPhongDat.Image = ((System.Drawing.Image)(resources.GetObject("btn_XemPhongDat.Image")));
+            this.btn_XemPhongDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_XemPhongDat.Location = new System.Drawing.Point(16, 208);
+            this.btn_XemPhongDat.Name = "btn_XemPhongDat";
+            this.btn_XemPhongDat.Size = new System.Drawing.Size(187, 54);
+            this.btn_XemPhongDat.TabIndex = 12;
+            this.btn_XemPhongDat.Text = "     Phòng đã đặt";
+            this.btn_XemPhongDat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_XemPhongDat.UseVisualStyleBackColor = true;
+            this.btn_XemPhongDat.Click += new System.EventHandler(this.btn_XemPhongDat_Click);
             // 
             // btn_XemPhong
             // 
@@ -269,21 +271,22 @@
             this.btn_XemPhong.UseVisualStyleBackColor = true;
             this.btn_XemPhong.Click += new System.EventHandler(this.btn_XemPhong_Click);
             // 
-            // button2
+            // btn_LogOut
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(16, 553);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(184, 54);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "       Logout";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_LogOut.FlatAppearance.BorderSize = 0;
+            this.btn_LogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_LogOut.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LogOut.ForeColor = System.Drawing.Color.White;
+            this.btn_LogOut.Image = ((System.Drawing.Image)(resources.GetObject("btn_LogOut.Image")));
+            this.btn_LogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_LogOut.Location = new System.Drawing.Point(16, 553);
+            this.btn_LogOut.Name = "btn_LogOut";
+            this.btn_LogOut.Size = new System.Drawing.Size(184, 54);
+            this.btn_LogOut.TabIndex = 16;
+            this.btn_LogOut.Text = "       Logout";
+            this.btn_LogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_LogOut.UseVisualStyleBackColor = true;
+            this.btn_LogOut.Click += new System.EventHandler(this.btn_LogOut_Click);
             // 
             // btn_Thoat
             // 
@@ -376,15 +379,15 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel SidePanel;
         private System.Windows.Forms.Button btn_ThongTinKhachHang;
-        private System.Windows.Forms.Button btn_XemPhongDat;
         private System.Windows.Forms.Button btn_ThanhToan;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel PanelSlide;
         private System.Windows.Forms.Button btn_XemPhong;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_LogOut;
         private System.Windows.Forms.Button btn_Thoat;
         private System.Windows.Forms.FlowLayoutPanel pn_HienThi;
         private System.Windows.Forms.Button btn_Refresh;
         private Guna.UI2.WinForms.Guna2Button btn_DieuChinhDV;
+        private System.Windows.Forms.Button btn_XemPhongDat;
     }
 }

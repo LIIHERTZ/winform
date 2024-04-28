@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_Mua = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Mua = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_AnhDichVu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,22 +120,15 @@
             // 
             // btn_Mua
             // 
-            this.btn_Mua.BorderColor = System.Drawing.Color.PaleGreen;
-            this.btn_Mua.BorderRadius = 18;
-            this.btn_Mua.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.btn_Mua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Mua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Mua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Mua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Mua.FillColor = System.Drawing.Color.MediumSpringGreen;
-            this.btn_Mua.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Mua.ForeColor = System.Drawing.Color.IndianRed;
-            this.btn_Mua.Location = new System.Drawing.Point(74, 353);
-            this.btn_Mua.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Mua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Mua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Mua.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_Mua.Location = new System.Drawing.Point(81, 351);
             this.btn_Mua.Name = "btn_Mua";
-            this.btn_Mua.Size = new System.Drawing.Size(175, 35);
-            this.btn_Mua.TabIndex = 38;
+            this.btn_Mua.Size = new System.Drawing.Size(129, 35);
+            this.btn_Mua.TabIndex = 50;
             this.btn_Mua.Text = "MUA";
+            this.btn_Mua.UseVisualStyleBackColor = true;
             this.btn_Mua.Click += new System.EventHandler(this.btn_Mua_Click);
             // 
             // UC_Services
@@ -168,6 +161,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Button btn_Mua;
+        private System.Windows.Forms.Button btn_Mua;
     }
 }

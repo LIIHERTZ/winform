@@ -88,5 +88,33 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             FixService a = new FixService();
             a.ShowDialog();
         }
+
+        private void btn_LichSuGiaoDich_Click(object sender, EventArgs e)
+        {
+            Refresh();
+            admin = new AdminDAO();
+            admin.loadLichSu(pn_HienThi);
+        }
+
+        private void btn_ThongTinKhachHang_Click(object sender, EventArgs e)
+        {
+            Refresh();
+            admin = new AdminDAO();
+            admin.loadKhachHang(pn_HienThi);
+        }
+
+        private void btn_LogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult traloi;
+            traloi = (MessageBox.Show("Bạn có muốn đăng xuất không?", "Chú ý", MessageBoxButtons.YesNo, MessageBoxIcon.Warning));
+            if (traloi == DialogResult.Yes)
+            {
+                if (this.Owner is Login)
+                {
+                    (this.Owner as Login).ShowLoginForm();
+                }
+                this.Close();
+            }
+        }
     }
 }

@@ -40,8 +40,8 @@
             this.lbl_TongTien = new System.Windows.Forms.Label();
             this.cbb_MaDatPhong = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_SoLuong = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_Mua = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Thoat = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Mua = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +73,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label7.Location = new System.Drawing.Point(41, 102);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 29);
+            this.label7.Size = new System.Drawing.Size(95, 23);
             this.label7.TabIndex = 83;
             this.label7.Text = "Mã phòng:";
             // 
@@ -180,23 +180,6 @@
             this.txt_SoLuong.TabIndex = 92;
             this.txt_SoLuong.TextChanged += new System.EventHandler(this.txt_SoLuong_TextChanged);
             // 
-            // btn_Mua
-            // 
-            this.btn_Mua.BorderRadius = 18;
-            this.btn_Mua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Mua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Mua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Mua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Mua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btn_Mua.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Mua.ForeColor = System.Drawing.Color.White;
-            this.btn_Mua.Location = new System.Drawing.Point(259, 311);
-            this.btn_Mua.Name = "btn_Mua";
-            this.btn_Mua.Size = new System.Drawing.Size(180, 45);
-            this.btn_Mua.TabIndex = 93;
-            this.btn_Mua.Text = "MUA";
-            this.btn_Mua.Click += new System.EventHandler(this.btn_Mua_Click);
-            // 
             // btn_Thoat
             // 
             this.btn_Thoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -214,14 +197,27 @@
             this.btn_Thoat.TabIndex = 94;
             this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
+            // btn_Mua
+            // 
+            this.btn_Mua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Mua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Mua.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_Mua.Location = new System.Drawing.Point(297, 308);
+            this.btn_Mua.Name = "btn_Mua";
+            this.btn_Mua.Size = new System.Drawing.Size(129, 35);
+            this.btn_Mua.TabIndex = 95;
+            this.btn_Mua.Text = "MUA";
+            this.btn_Mua.UseVisualStyleBackColor = true;
+            this.btn_Mua.Click += new System.EventHandler(this.btn_Mua_Click);
+            // 
             // BuyService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(462, 378);
-            this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.btn_Mua);
+            this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.txt_SoLuong);
             this.Controls.Add(this.cbb_MaDatPhong);
             this.Controls.Add(this.lbl_TongTien);
@@ -254,7 +250,7 @@
         private System.Windows.Forms.Label lbl_TongTien;
         private Guna.UI2.WinForms.Guna2ComboBox cbb_MaDatPhong;
         private Guna.UI2.WinForms.Guna2TextBox txt_SoLuong;
-        private Guna.UI2.WinForms.Guna2Button btn_Mua;
         private Guna.UI2.WinForms.Guna2Button btn_Thoat;
+        private System.Windows.Forms.Button btn_Mua;
     }
 }

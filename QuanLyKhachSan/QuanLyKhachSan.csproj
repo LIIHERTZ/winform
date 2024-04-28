@@ -79,6 +79,12 @@
     <Compile Include="ADMIN\ALL_FORM\BuyService.Designer.cs">
       <DependentUpon>BuyService.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADMIN\ALL_FORM\CustomerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ALL_FORM\CustomerDetail.Designer.cs">
+      <DependentUpon>CustomerDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADMIN\ALL_FORM\FixService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,7 +94,10 @@
     <Compile Include="ADMIN\ALL_LAYER_DAO\AdminDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\BookingRoomDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\BuyServiceDAO.cs" />
+    <Compile Include="ADMIN\ALL_LAYER_DAO\CustomerDetailDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\FixServiceDAO.cs" />
+    <Compile Include="ADMIN\ALL_LAYER_DAO\UC_CustomerDAO.cs" />
+    <Compile Include="ADMIN\ALL_LAYER_DAO\UC_HistoryDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_ReseverRoomsDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_BookedRoomsDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_PayDAO.cs" />
@@ -98,6 +107,18 @@
     </Compile>
     <Compile Include="ADMIN\ALL_USER_CONTROL\UC_BookedRooms.Designer.cs">
       <DependentUpon>UC_BookedRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_Customer.Designer.cs">
+      <DependentUpon>UC_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_History.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_History.Designer.cs">
+      <DependentUpon>UC_History.cs</DependentUpon>
     </Compile>
     <Compile Include="ADMIN\ALL_USER_CONTROL\UC_Pay.cs">
       <SubType>UserControl</SubType>
@@ -186,11 +207,20 @@
     <EmbeddedResource Include="ADMIN\ALL_FORM\BuyService.resx">
       <DependentUpon>BuyService.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\ALL_FORM\CustomerDetail.resx">
+      <DependentUpon>CustomerDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADMIN\ALL_FORM\FixService.resx">
       <DependentUpon>FixService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_BookedRooms.resx">
       <DependentUpon>UC_BookedRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_Customer.resx">
+      <DependentUpon>UC_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_History.resx">
+      <DependentUpon>UC_History.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_Pay.resx">
       <DependentUpon>UC_Pay.cs</DependentUpon>

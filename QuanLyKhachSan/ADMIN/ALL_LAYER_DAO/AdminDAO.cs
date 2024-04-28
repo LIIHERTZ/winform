@@ -12,11 +12,11 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
     internal class AdminDAO
     {
         QLKS_ENTITY db = new QLKS_ENTITY();
-        FlowLayoutPanel fl;
         string ten;
+        FlowLayoutPanel fl;
         public void loadAllUCRooms(FlowLayoutPanel f)
         {
-            fl = f;
+
             var q = from k in db.Phongs
                     join j in db.LoaiPhongs on k.LoaiPhong equals j.MaLoaiPhong
                     select new
@@ -71,6 +71,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 c.MaPhong = item.DatPhong.MaPhong;
                 c.MaKH = item.DatPhong.MaKH;
                 c.NgayDat = item.DatPhong.NgayDat;  
+                c.NgayTra = item.DatPhong.NgayTra;
                 c.ThoiGianDat  = item.DatPhong.ThoiGianDat;
 
                 UC_BookedRooms d = new UC_BookedRooms(a, b, c,tendnnv);
@@ -88,6 +89,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
         public void loadAllUCReserveRooms(FlowLayoutPanel f, string tendnnv)
         {
             fl = f;
+            ten = tendnnv;
             var q = from datPhong in db.DatPhongs
                     join phong in db.Phongs on datPhong.MaPhong equals phong.MaPhong
                     join loaiPhong in db.LoaiPhongs on phong.LoaiPhong equals loaiPhong.MaLoaiPhong
@@ -131,7 +133,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 f.Controls.Add(a);
             }
         }
-        public void RefreshBookedRooms() 
+        public void RefreshBookedRooms()
         {
             if (fl != null)
             {
@@ -140,5 +142,18 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
             }
 
         }
+        public void loadLichSu(FlowLayoutPanel f)
+        {
+            fl = f;
+            UC_History his = new UC_History();
+            f.Controls.Add(his);
+        }
+        public void loadKhachHang(FlowLayoutPanel f)
+        {
+            fl = f;
+            UC_Customer cus = new UC_Customer();
+            f.Controls.Add(cus);
+        }
+
     }
 }
