@@ -1,4 +1,5 @@
-﻿using QuanLyKhachSan.ADMIN.ALL_LAYER_DAO;
+﻿using QuanLyKhachSan.ADMIN.ALL_FORM;
+using QuanLyKhachSan.ADMIN.ALL_LAYER_DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,14 +17,16 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
     {
         string tendnNV;
         UC_BookedRoomsDAO booked = new UC_BookedRoomsDAO();
+        Admin temp;
         public UC_BookedRooms()
         {
             InitializeComponent();
         }
         string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
-        public UC_BookedRooms(Phong a,LoaiPhong b, DatPhong c,string s)
+        public UC_BookedRooms(Phong a,LoaiPhong b, DatPhong c,Admin f,string s)
         {
             InitializeComponent();
+            temp = f;
             tendnNV = s;
             lbl_TinhTrang.Text = a.TinhTrang;
             lbl_MaDatPhong.Text = c.MaDatPhong.ToString();
@@ -57,6 +60,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
                 a.TinhTrang = "wait";
                 booked.Sua(lbl_MaPhong.Text,lbl_MaDatPhong.Text);
                 booked.ThemHoaDon(a);
+                AdminDAO admindao = new AdminDAO();
+                admindao.loadAllUCBookedRooms(temp, tendnNV);
 
             }
         }

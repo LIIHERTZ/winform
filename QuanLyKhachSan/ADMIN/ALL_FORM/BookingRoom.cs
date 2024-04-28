@@ -14,13 +14,15 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
     public partial class BookingRoom : Form
     {
         BookingRoomDAO booking =new BookingRoomDAO();
+        Admin temp;
         public BookingRoom()
         {
             InitializeComponent();
         }
-        public BookingRoom(string a, string b)
+        public BookingRoom(string a, string b,Admin n)
         {
             InitializeComponent();
+            temp = n;
             booking = new BookingRoomDAO();
             int sl =  booking.demDatPhong();
             txt_MaDatPhong.Text = sl.ToString();
@@ -77,6 +79,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
                 UC_RoomsDAO ucroom = new UC_RoomsDAO();
                 ucroom.Sua(txt_MaPhong.Text);
                 this.Close();
+                AdminDAO admin = new AdminDAO();
+                admin.loadAllUCRooms(temp);
             }
         }
 

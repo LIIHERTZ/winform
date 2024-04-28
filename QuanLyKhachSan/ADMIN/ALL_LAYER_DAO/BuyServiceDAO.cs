@@ -9,9 +9,9 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
     internal class BuyServiceDAO
     {
         QLKS_ENTITY db = new QLKS_ENTITY();
-        public List<Phong> loadPhong()
+        public List<DatPhong> loadMaDatPhong()
         {
-            var p = from k in db.Phongs where k.TinhTrang != "empty"  select k;
+            var p = from k in db.DatPhongs where k.TinhTrang == "unfinish" select k;
             return p.ToList();
         }
         public string layTenKH(string a)
@@ -20,7 +20,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
             var q = from k in db.DatPhongs
                     join j in db.Phongs on k.MaPhong equals j.MaPhong
                     join h in db.KhachHangs on k.MaKH equals h.MaKH
-                    where j.TinhTrang != "empty" && a == j.MaPhong.ToString()
+                    where j.TinhTrang != "empty" && a == k.MaDatPhong.ToString()
                     select new
                     {
                         k,

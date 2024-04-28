@@ -385,7 +385,7 @@
         private System.Windows.Forms.Button btn_XemPhong;
         private System.Windows.Forms.Button btn_LogOut;
         private System.Windows.Forms.Button btn_Thoat;
-        private System.Windows.Forms.FlowLayoutPanel pn_HienThi;
+        public System.Windows.Forms.FlowLayoutPanel pn_HienThi;
         private System.Windows.Forms.Button btn_Refresh;
         private Guna.UI2.WinForms.Guna2Button btn_DieuChinhDV;
         private System.Windows.Forms.Button btn_XemPhongDat;

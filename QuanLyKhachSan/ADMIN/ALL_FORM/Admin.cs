@@ -38,9 +38,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
 
         private void btn_XemPhong_Click(object sender, EventArgs e)
         {
-            pn_HienThi.Controls.Clear();
             admin = new AdminDAO();
-            admin.loadAllUCRooms(pn_HienThi);
+            admin.loadAllUCRooms(this);
         }
         public void Refresh()
         {
@@ -55,9 +54,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
 
         private void btn_XemPhongDat_Click(object sender, EventArgs e)
         {
-            Refresh();
             admin = new AdminDAO();
-            admin.loadAllUCBookedRooms(pn_HienThi,tendnNV);
+            admin.loadAllUCBookedRooms(this,tendnNV);
         }
 
         private void btn_ThanhToan_Click(object sender, EventArgs e)
@@ -69,9 +67,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
 
         private void btn_CheckIn_Click(object sender, EventArgs e)
         {
-            Refresh();
             admin = new AdminDAO();
-            admin.loadAllUCReserveRooms(pn_HienThi, tendnNV);
+            admin.loadAllUCReserveRooms(this, tendnNV);
         }
 
         private void btn_DichVu_Click(object sender, EventArgs e)

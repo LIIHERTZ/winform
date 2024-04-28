@@ -24,9 +24,9 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             InitializeComponent();
             madv = a;
             lbl_TenDV.Text = b;
-            cbb_MaDatPhong.DataSource = buy.loadPhong();
-            cbb_MaDatPhong.DisplayMember = "MaPhong";
-            cbb_MaDatPhong.ValueMember = "MaPhong";
+            cbb_MaDatPhong.DataSource = buy.loadMaDatPhong();
+            cbb_MaDatPhong.DisplayMember = "MaDatPhong";
+            cbb_MaDatPhong.ValueMember = "MaDatPhong";
             cbb_MaDatPhong.SelectedIndex = -1;
 
         }
@@ -40,8 +40,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
         {
             if (cbb_MaDatPhong.SelectedValue != null)
             {
-                string maphong = cbb_MaDatPhong.SelectedValue.ToString();
-                lbl_TenKH.Text = buy.layTenKH(maphong);
+                string madatphong = cbb_MaDatPhong.SelectedValue.ToString();
+                lbl_TenKH.Text = buy.layTenKH(madatphong);
             }
         }
 

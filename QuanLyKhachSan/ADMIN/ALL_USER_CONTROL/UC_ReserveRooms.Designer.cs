@@ -193,6 +193,7 @@
             this.btn_CheckIn.TabIndex = 91;
             this.btn_CheckIn.Text = "CHECK IN";
             this.btn_CheckIn.UseVisualStyleBackColor = true;
+            this.btn_CheckIn.Click += new System.EventHandler(this.btn_CheckIn_Click);
             // 
             // lbl_TinhTrang
             // 

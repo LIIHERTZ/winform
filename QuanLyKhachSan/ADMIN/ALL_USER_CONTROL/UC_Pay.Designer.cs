@@ -478,16 +478,16 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button btn_KiemTra;
-        private System.Windows.Forms.Label lbl_TienCanTra;
-        private System.Windows.Forms.Label lbl_TongTien;
-        private System.Windows.Forms.Label lbl_TienDV;
-        private System.Windows.Forms.Label lbl_TienPhong;
-        private System.Windows.Forms.Label lbl_NgayLapHoaDon;
-        private System.Windows.Forms.Label lbl_NgayDatPhong;
-        private System.Windows.Forms.Label lbl_MaNV;
-        private System.Windows.Forms.Label lbl_MaPhong;
-        private System.Windows.Forms.Label lbl_MaDatPhong;
-        private System.Windows.Forms.Label lbl_MaKH;
+        public System.Windows.Forms.Label lbl_TienCanTra;
+        public System.Windows.Forms.Label lbl_TongTien;
+        public System.Windows.Forms.Label lbl_TienDV;
+        public System.Windows.Forms.Label lbl_TienPhong;
+        public System.Windows.Forms.Label lbl_NgayLapHoaDon;
+        public System.Windows.Forms.Label lbl_NgayDatPhong;
+        public System.Windows.Forms.Label lbl_MaNV;
+        public System.Windows.Forms.Label lbl_MaPhong;
+        public System.Windows.Forms.Label lbl_MaDatPhong;
+        public System.Windows.Forms.Label lbl_MaKH;
         private Guna.UI2.WinForms.Guna2Button btn_ThanhToan;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
@@ -498,19 +498,19 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lbl_MaHD;
+        public System.Windows.Forms.Label lbl_MaHD;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cb_TimKiem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label lbl_NgayTraPhong;
+        public System.Windows.Forms.Label lbl_NgayTraPhong;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label lbl_LoaiPhong;
+        public System.Windows.Forms.Label lbl_LoaiPhong;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label lbl_GiamGia;
+        public System.Windows.Forms.Label lbl_GiamGia;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label lbl_TenKH;
+        public System.Windows.Forms.Label lbl_TenKH;
     }
 }

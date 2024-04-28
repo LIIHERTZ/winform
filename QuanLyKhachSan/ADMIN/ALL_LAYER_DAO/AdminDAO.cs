@@ -1,4 +1,5 @@
-﻿using QuanLyKhachSan.ADMIN.ALL_USER_CONTROL;
+﻿using QuanLyKhachSan.ADMIN.ALL_FORM;
+using QuanLyKhachSan.ADMIN.ALL_USER_CONTROL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
     {
         QLKS_ENTITY db = new QLKS_ENTITY();
         string ten;
-        FlowLayoutPanel fl;
-        public void loadAllUCRooms(FlowLayoutPanel f)
+        public void loadAllUCRooms(Admin f)
         {
 
             var q = from k in db.Phongs
@@ -24,6 +24,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                         k,
                         j
                     };
+            f.pn_HienThi.Controls.Clear();
             foreach (var item in q)
             {
                 Phong a = new Phong();
@@ -36,13 +37,12 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 b.Gia = item.j.Gia;
                 b.Anh = item.j.Anh;
                 b.SoNguoi = item.j.SoNguoi;
-                UC_Rooms c = new UC_Rooms(a,b);
-                f.Controls.Add(c);
+                UC_Rooms c = new UC_Rooms(a,b,f);
+                f.pn_HienThi.Controls.Add(c);
             }
         }
-        public void loadAllUCBookedRooms(FlowLayoutPanel f,string tendnnv)
+        public void loadAllUCBookedRooms(Admin f,string tendnnv)
         {
-            fl = f;
             ten = tendnnv;
             var q = from datPhong in db.DatPhongs
                         join phong in db.Phongs on datPhong.MaPhong equals phong.MaPhong
@@ -54,6 +54,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                                 Phong = phong,
                                 LoaiPhong = loaiPhong
                             };
+            f.pn_HienThi.Controls.Clear();
             foreach (var item in q)
             {
                 Phong a = new Phong(); 
@@ -74,21 +75,21 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 c.NgayTra = item.DatPhong.NgayTra;
                 c.ThoiGianDat  = item.DatPhong.ThoiGianDat;
 
-                UC_BookedRooms d = new UC_BookedRooms(a, b, c,tendnnv);
-                f.Controls.Add(d);
+                UC_BookedRooms d = new UC_BookedRooms(a, b, c,f,tendnnv);
+                f.pn_HienThi.Controls.Add(d);
             }
         }
 
         public void loadThanhToan(FlowLayoutPanel f)
         {
-            fl = f;
+
             UC_Pay pay = new UC_Pay();
             f.Controls.Add(pay);
         }
 
-        public void loadAllUCReserveRooms(FlowLayoutPanel f, string tendnnv)
+        public void loadAllUCReserveRooms(Admin f, string tendnnv)
         {
-            fl = f;
+
             ten = tendnnv;
             var q = from datPhong in db.DatPhongs
                     join phong in db.Phongs on datPhong.MaPhong equals phong.MaPhong
@@ -100,6 +101,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                         Phong = phong,
                         LoaiPhong = loaiPhong
                     };
+            f.pn_HienThi.Controls.Clear();
             foreach (var item in q)
             {
                 Phong a = new Phong();
@@ -119,13 +121,12 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 c.NgayDat = item.DatPhong.NgayDat;
                 c.ThoiGianDat = item.DatPhong.ThoiGianDat;
 
-                UC_ReserveRooms d = new UC_ReserveRooms(a, b, c, tendnnv);
-                f.Controls.Add(d);
+                UC_ReserveRooms d = new UC_ReserveRooms(a, b, c, f, tendnnv);
+                f.pn_HienThi.Controls.Add(d);
             }
         }
         public void loadAllUCServices(FlowLayoutPanel f)
         {
-            fl = f;
             var p = from k in db.DichVus select k;
             foreach (var k in p)
             {
@@ -133,24 +134,13 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 f.Controls.Add(a);
             }
         }
-        public void RefreshBookedRooms()
-        {
-            if (fl != null)
-            {
-                fl.Controls.Clear();
-                loadAllUCBookedRooms(fl, ten);
-            }
-
-        }
         public void loadLichSu(FlowLayoutPanel f)
         {
-            fl = f;
             UC_History his = new UC_History();
             f.Controls.Add(his);
         }
         public void loadKhachHang(FlowLayoutPanel f)
         {
-            fl = f;
             UC_Customer cus = new UC_Customer();
             f.Controls.Add(cus);
         }

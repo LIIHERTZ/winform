@@ -22,9 +22,11 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
         UC_RoomsDAO ucroomsdao = new UC_RoomsDAO();
         AdminDAO admindao = new AdminDAO();
         string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
-        public UC_Rooms(Phong a, LoaiPhong b)
+        public Admin temp;
+        public UC_Rooms(Phong a, LoaiPhong b, Admin n)
         {
             InitializeComponent();
+            this.temp = n;
             lbl_GiaTien.Text = b.Gia.ToString() + " vnđ";
             lbl_TinhTrang.Text = a.TinhTrang;
             lbl_MaLoaiPhong.Text = a.MaPhong.ToString();
@@ -47,7 +49,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
 
         private void btn_DatPhong_Click(object sender, EventArgs e)
         {
-            BookingRoom a = new BookingRoom (lbl_GiaTien.Text, lbl_MaLoaiPhong.Text);
+            BookingRoom a = new BookingRoom (lbl_GiaTien.Text, lbl_MaLoaiPhong.Text, temp);
             a.ShowDialog();
         }
 

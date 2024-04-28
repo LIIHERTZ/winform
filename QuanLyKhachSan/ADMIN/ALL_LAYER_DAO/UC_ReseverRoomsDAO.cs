@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
 {
@@ -18,6 +19,15 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 b = k.HoTen;
             }
             return b;
+        }
+        public void sua(string MaPhong)
+        {
+            var p = from k in db.Phongs where k.MaPhong.ToString() == MaPhong select k;
+            foreach (var j in p)
+            {
+                j.TinhTrang = "full";
+            }
+            db.SaveChanges();
         }
     }
 }
