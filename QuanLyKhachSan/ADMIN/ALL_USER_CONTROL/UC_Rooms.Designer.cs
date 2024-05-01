@@ -294,7 +294,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pic_Anh);
             this.Name = "UC_Rooms";
-            this.Size = new System.Drawing.Size(696, 166);
+            this.Size = new System.Drawing.Size(696, 163);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Anh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

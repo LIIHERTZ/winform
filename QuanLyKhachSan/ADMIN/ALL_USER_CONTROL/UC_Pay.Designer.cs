@@ -30,7 +30,6 @@
         {
             this.btn_KiemTra = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_TienCanTra = new System.Windows.Forms.Label();
-            this.lbl_TongTien = new System.Windows.Forms.Label();
             this.lbl_TienDV = new System.Windows.Forms.Label();
             this.lbl_TienPhong = new System.Windows.Forms.Label();
             this.lbl_NgayLapHoaDon = new System.Windows.Forms.Label();
@@ -41,7 +40,6 @@
             this.lbl_MaKH = new System.Windows.Forms.Label();
             this.btn_ThanhToan = new Guna.UI2.WinForms.Guna2Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -58,8 +56,6 @@
             this.lbl_NgayTraPhong = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.lbl_LoaiPhong = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lbl_GiamGia = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.lbl_TenKH = new System.Windows.Forms.Label();
@@ -92,16 +88,6 @@
             this.lbl_TienCanTra.Size = new System.Drawing.Size(42, 17);
             this.lbl_TienCanTra.TabIndex = 60;
             this.lbl_TienCanTra.Text = "trống";
-            // 
-            // lbl_TongTien
-            // 
-            this.lbl_TongTien.AutoSize = true;
-            this.lbl_TongTien.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TongTien.Location = new System.Drawing.Point(604, 159);
-            this.lbl_TongTien.Name = "lbl_TongTien";
-            this.lbl_TongTien.Size = new System.Drawing.Size(42, 17);
-            this.lbl_TongTien.TabIndex = 59;
-            this.lbl_TongTien.Text = "trống";
             // 
             // lbl_TienDV
             // 
@@ -147,7 +133,7 @@
             // 
             this.lbl_MaNV.AutoSize = true;
             this.lbl_MaNV.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MaNV.Location = new System.Drawing.Point(604, 193);
+            this.lbl_MaNV.Location = new System.Drawing.Point(604, 294);
             this.lbl_MaNV.Name = "lbl_MaNV";
             this.lbl_MaNV.Size = new System.Drawing.Size(42, 17);
             this.lbl_MaNV.TabIndex = 52;
@@ -209,16 +195,6 @@
             this.label15.TabIndex = 47;
             this.label15.Text = "Số tiền cần thanh toán:";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(518, 159);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 17);
-            this.label14.TabIndex = 46;
-            this.label14.Text = "Tổng tiền:";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -253,7 +229,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(484, 193);
+            this.label7.Location = new System.Drawing.Point(484, 294);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(102, 17);
             this.label7.TabIndex = 39;
@@ -378,26 +354,6 @@
             this.lbl_LoaiPhong.TabIndex = 66;
             this.lbl_LoaiPhong.Text = "trống";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(522, 227);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 17);
-            this.label13.TabIndex = 67;
-            this.label13.Text = "Giảm giá:";
-            // 
-            // lbl_GiamGia
-            // 
-            this.lbl_GiamGia.AutoSize = true;
-            this.lbl_GiamGia.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_GiamGia.Location = new System.Drawing.Point(604, 227);
-            this.lbl_GiamGia.Name = "lbl_GiamGia";
-            this.lbl_GiamGia.Size = new System.Drawing.Size(42, 17);
-            this.lbl_GiamGia.TabIndex = 68;
-            this.lbl_GiamGia.Text = "trống";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -435,15 +391,12 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.lbl_TenKH);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.lbl_GiamGia);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.lbl_LoaiPhong);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.lbl_NgayTraPhong);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.btn_KiemTra);
             this.Controls.Add(this.lbl_TienCanTra);
-            this.Controls.Add(this.lbl_TongTien);
             this.Controls.Add(this.lbl_TienDV);
             this.Controls.Add(this.lbl_TienPhong);
             this.Controls.Add(this.lbl_NgayLapHoaDon);
@@ -454,7 +407,6 @@
             this.Controls.Add(this.lbl_MaKH);
             this.Controls.Add(this.btn_ThanhToan);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label18);
@@ -479,7 +431,6 @@
 
         private Guna.UI2.WinForms.Guna2Button btn_KiemTra;
         public System.Windows.Forms.Label lbl_TienCanTra;
-        public System.Windows.Forms.Label lbl_TongTien;
         public System.Windows.Forms.Label lbl_TienDV;
         public System.Windows.Forms.Label lbl_TienPhong;
         public System.Windows.Forms.Label lbl_NgayLapHoaDon;
@@ -490,7 +441,6 @@
         public System.Windows.Forms.Label lbl_MaKH;
         private Guna.UI2.WinForms.Guna2Button btn_ThanhToan;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label8;
@@ -507,8 +457,6 @@
         public System.Windows.Forms.Label lbl_NgayTraPhong;
         private System.Windows.Forms.Label label16;
         public System.Windows.Forms.Label lbl_LoaiPhong;
-        private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.Label lbl_GiamGia;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label18;
         public System.Windows.Forms.Label lbl_TenKH;

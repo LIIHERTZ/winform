@@ -15,6 +15,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
     {
         BookingRoomDAO booking =new BookingRoomDAO();
         Admin temp;
+        DateTime time;
         public BookingRoom()
         {
             InitializeComponent();
@@ -26,8 +27,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             booking = new BookingRoomDAO();
             int sl =  booking.demDatPhong();
             txt_MaDatPhong.Text = sl.ToString();
-
             txt_MaDatPhong.Enabled = false;
+
             txt_MaPhong.Enabled = false;
 
             txt_GiaTien.Text = a;
@@ -36,14 +37,13 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             txt_MaPhong.Text = b;
             txt_MaPhong.Enabled = false ;
 
-            DateTime currentTime = DateTime.Now;
-            TimeSpan timeOfDay = currentTime.TimeOfDay;
-            string formattedTime = $"{timeOfDay.Hours:D2}:{timeOfDay.Minutes:D2}:{timeOfDay.Seconds:D2}";
-            txt_ThoiGian.Text = formattedTime;
-            txt_ThoiGian.Enabled = false;
+            dtp_NgayDatPhong.Value = DateTime.Now;
+            dtp_NgayTraPhong.Value = DateTime.Now;
 
-            
-                
+            time = DateTime.Now;
+            txt_ThoiGian.Enabled = false;
+            txt_ThoiGian.Text = time.ToString("HH:mm:ss");
+
             txt_TenKhachHang.Enabled = false;
         }
 
@@ -54,18 +54,16 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
 
         private void btn_XacNhan_Click(object sender, EventArgs e)
         {
-            booking = new BookingRoomDAO();
-            DatPhong a = new DatPhong();
-            a.MaKH = Convert.ToInt32(txt_MaKH.Text);
-            a.MaPhong = Convert.ToInt32(txt_MaPhong.Text);
-
-            DateTime currentDate = DateTime.Now;
-            a.ThoiGianDat = currentDate;
-            a.NgayDat = dtp_NgayDatPhong.Value;
-            a.NgayTra = dtp_NgayTraPhong.Value;
-            a.TinhTrang = "unfinish";
-
-            if (txt_SoNguoi.Text == "")
+            int ketQua = DateTime.Compare(dtp_NgayDatPhong.Value, dtp_NgayTraPhong.Value);
+            if (txt_MaKH.Text=="")
+            {
+                MessageBox.Show("Chưa nhập mã khách hàng!", "Chú ý");
+            }
+            else if (txt_TenKhachHang.Text == "")
+            {
+                MessageBox.Show("Khách hàng không tồn tại hoặc chưa đăng ký tài khoản!", "Chú ý");
+            }
+            else if (txt_SoNguoi.Text == "")
             {
                 MessageBox.Show("Bạn chưa chọn số lượng người!", "Chú ý");
             }
@@ -73,8 +71,20 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             {
                 MessageBox.Show("Vượt quá lượng người cho phép!", "Chú ý");
             }
+            else if (ketQua>=0)
+            {
+                MessageBox.Show("Ngày trả phòng phải sau ngày đặt phòng!", "Chú ý");
+            }
             else
             {
+                booking = new BookingRoomDAO();
+                DatPhong a = new DatPhong();
+                a.MaKH = Convert.ToInt32(txt_MaKH.Text);
+                a.MaPhong = Convert.ToInt32(txt_MaPhong.Text);
+                a.ThoiGianDat = time;
+                a.NgayDat = dtp_NgayDatPhong.Value;
+                a.NgayTra = dtp_NgayTraPhong.Value;
+                a.TinhTrang = "unfinish";
                 booking.Them(a);
                 UC_RoomsDAO ucroom = new UC_RoomsDAO();
                 ucroom.Sua(txt_MaPhong.Text);
@@ -90,6 +100,22 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             string s = booking.checkMaKhachHang(txt_MaKH.Text);
             txt_TenKhachHang.Text = s;
 
+        }
+
+        private void txt_SoNguoi_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_MaKH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

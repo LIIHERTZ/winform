@@ -27,7 +27,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
         {
             InitializeComponent();
             this.temp = n;
-            lbl_GiaTien.Text = b.Gia.ToString() + " vnđ";
+            lbl_GiaTien.Text = b.Gia.ToString() + " vnđ/ngày";
             lbl_TinhTrang.Text = a.TinhTrang;
             lbl_MaLoaiPhong.Text = a.MaPhong.ToString();
             lbl_LoaiPhong.Text = b.MaLoaiPhong;

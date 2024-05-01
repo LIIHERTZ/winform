@@ -222,6 +222,7 @@
             this.txt_MaKH.SelectedText = "";
             this.txt_MaKH.Size = new System.Drawing.Size(171, 21);
             this.txt_MaKH.TabIndex = 104;
+            this.txt_MaKH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_MaKH_KeyPress);
             // 
             // guna2HtmlLabel1
             // 

@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\git_winfform\\QuanLyKhachSan\\",
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|c:\\users\\asus\\desktop\\data_engineer\\lap_trinh_windows\\git_winfform\\quanlykhachsan\\admin\\all_layer_dao\\uc_paydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|solutionrelative:admin\\all_layer_dao\\uc_paydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|c:\\users\\asus\\desktop\\data_engineer\\lap_trinh_windows\\doanwinform_chinhthuc\\do_an_cuoi_ky_winform\\quanlykhachsan\\admin\\all_user_control\\uc_history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|solutionrelative:admin\\all_user_control\\uc_history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\git_winfform\\QuanLyKhachSan\\admin\\all_user_control\\uc_pay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|solutionrelative:admin\\all_user_control\\uc_pay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|c:\\users\\asus\\desktop\\data_engineer\\lap_trinh_windows\\doanwinform_chinhthuc\\do_an_cuoi_ky_winform\\quanlykhachsan\\admin\\all_user_control\\uc_history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|solutionrelative:admin\\all_user_control\\uc_history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\git_winfform\\QuanLyKhachSan\\admin\\all_user_control\\uc_pay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|solutionrelative:admin\\all_user_control\\uc_pay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|c:\\users\\asus\\desktop\\data_engineer\\lap_trinh_windows\\doanwinform_chinhthuc\\do_an_cuoi_ky_winform\\quanlykhachsan\\admin\\all_user_control\\uc_customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA40BFA-358F-45F4-AC0C-F7292314EE91}|QuanLyKhachSan.csproj|solutionrelative:admin\\all_user_control\\uc_customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,39 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UC_PayDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\git_winfform\\QuanLyKhachSan\\ADMIN\\ALL_LAYER_DAO\\UC_PayDAO.cs",
-              "RelativeDocumentMoniker": "ADMIN\\ALL_LAYER_DAO\\UC_PayDAO.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\git_winfform\\QuanLyKhachSan\\ADMIN\\ALL_LAYER_DAO\\UC_PayDAO.cs",
-              "RelativeToolTip": "ADMIN\\ALL_LAYER_DAO\\UC_PayDAO.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAiwFIAAAAtAAAA",
+              "DocumentIndex": 2,
+              "Title": "UC_Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_Customer.cs",
+              "RelativeDocumentMoniker": "ADMIN\\ALL_USER_CONTROL\\UC_Customer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_Customer.cs",
+              "RelativeToolTip": "ADMIN\\ALL_USER_CONTROL\\UC_Customer.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T16:37:42.512Z",
+              "WhenOpened": "2024-05-01T10:05:24.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UC_History.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_History.cs",
+              "RelativeDocumentMoniker": "ADMIN\\ALL_USER_CONTROL\\UC_History.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_History.cs",
+              "RelativeToolTip": "ADMIN\\ALL_USER_CONTROL\\UC_History.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA1wBsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T10:02:36.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UC_Pay.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\git_winfform\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_Pay.cs",
-              "RelativeDocumentMoniker": "ADMIN\\ALL_USER_CONTROL\\UC_Pay.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\git_winfform\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_Pay.cs",
-              "RelativeToolTip": "ADMIN\\ALL_USER_CONTROL\\UC_Pay.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCMAAABMAAAA",
+              "Title": "UC_History.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_History.cs",
+              "RelativeDocumentMoniker": "ADMIN\\ALL_USER_CONTROL\\UC_History.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_History.cs [Design]",
+              "RelativeToolTip": "ADMIN\\ALL_USER_CONTROL\\UC_History.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T16:37:38.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UC_Pay.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\git_winfform\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_Pay.cs",
-              "RelativeDocumentMoniker": "ADMIN\\ALL_USER_CONTROL\\UC_Pay.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\Data_Engineer\\Lap_Trinh_Windows\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_Pay.cs [Design]",
-              "RelativeToolTip": "..\\..\\DoAnWinForm_ChinhThuc\\Do_an_cuoi_ky_WinForm\\QuanLyKhachSan\\ADMIN\\ALL_USER_CONTROL\\UC_Pay.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T16:37:37.337Z"
+              "WhenOpened": "2024-05-01T10:02:32.485Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

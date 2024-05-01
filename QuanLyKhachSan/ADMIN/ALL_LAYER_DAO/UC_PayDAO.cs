@@ -22,8 +22,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
         {
             int mdp=-1;
             int giaphong = 0;
-            DateTime ngaydat = new DateTime(2024, 4, 25); 
-            DateTime ngaytra = new DateTime(2024, 4, 25); 
+            DateTime ngaydat=DateTime.Now;
+            DateTime ngaytra= DateTime.Now;
             var query = from hoaDon in db.HoaDons
                         join nhanVien in db.NhanViens on hoaDon.NhanVienThanhToan equals nhanVien.MaNV
                         join datPhong in db.DatPhongs on hoaDon.MaDatPhong equals datPhong.MaDatPhong
@@ -47,10 +47,9 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 pay.lbl_MaKH.Text = item.KhachHang.MaKH.ToString();
                 pay.lbl_MaPhong.Text = item.Phong.MaPhong.ToString();
                 pay.lbl_LoaiPhong.Text = item.LoaiPhong.MaLoaiPhong;
-                pay.lbl_NgayDatPhong.Text = item.DatPhong.NgayDat.ToString();
-                string ngayTra = item.HoaDon.NgayLap.ToString();
-                pay.lbl_NgayTraPhong.Text = item.HoaDon.NgayLap.ToString();
-                pay.lbl_NgayLapHoaDon.Text = ngayTra.Substring(0, 10);
+                pay.lbl_NgayDatPhong.Text = item.DatPhong.NgayDat.Value.ToString("dd/MM/yyyy");
+                pay.lbl_NgayTraPhong.Text = item.DatPhong.NgayTra.Value.ToString("dd/MM/yyyy");
+                pay.lbl_NgayLapHoaDon.Text = item.HoaDon.NgayLap.Value.ToString("dd/MM/yyyy HH:mm:ss");
                 pay.lbl_MaNV.Text = item.NhanVien.HoTen.ToString();
                 pay.lbl_TenKH.Text = item.KhachHang.HoTen.ToString();
                 mdp = item.DatPhong.MaDatPhong;
@@ -74,13 +73,13 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 int gia = Convert.ToInt32(item.DichVu.Gia);
                 tt = tt + sl*gia;
             }
-            TimeSpan duration =  ngaytra - ngaydat;
-            int songay = duration.Days;
+            TimeSpan duration = ngaytra.Date.Subtract(ngaydat.Date);
+            int songay = duration.Days +1;
             int tienphong = songay * giaphong;
             int tongtien = tienphong + tt; 
-            pay.lbl_TienPhong.Text = tienphong.ToString();
-            pay.lbl_TienDV.Text = tt.ToString();
-            pay.lbl_TongTien .Text = tongtien.ToString();  
+            pay.lbl_TienPhong.Text = tienphong.ToString()+" vnđ";
+            pay.lbl_TienDV.Text = tt.ToString() + " vnđ";
+            pay.lbl_TienCanTra.Text = tongtien.ToString() + " vnđ";  
         }
     }
 }

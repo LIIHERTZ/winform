@@ -119,6 +119,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 c.MaPhong = item.DatPhong.MaPhong;
                 c.MaKH = item.DatPhong.MaKH;
                 c.NgayDat = item.DatPhong.NgayDat;
+                c.NgayTra = item.DatPhong.NgayTra;
                 c.ThoiGianDat = item.DatPhong.ThoiGianDat;
 
                 UC_ReserveRooms d = new UC_ReserveRooms(a, b, c, f, tendnnv);

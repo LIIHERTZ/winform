@@ -51,6 +51,8 @@
             this.lb_maloaiphong = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pic_Anh = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_NgayTra = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Anh)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +61,7 @@
             this.lbl_ThoiGianDat.AutoSize = true;
             this.lbl_ThoiGianDat.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ThoiGianDat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_ThoiGianDat.Location = new System.Drawing.Point(562, 95);
+            this.lbl_ThoiGianDat.Location = new System.Drawing.Point(317, 121);
             this.lbl_ThoiGianDat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ThoiGianDat.Name = "lbl_ThoiGianDat";
             this.lbl_ThoiGianDat.Size = new System.Drawing.Size(46, 20);
@@ -107,7 +109,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(434, 95);
+            this.label5.Location = new System.Drawing.Point(205, 121);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 20);
@@ -321,11 +323,37 @@
             this.pic_Anh.TabIndex = 80;
             this.pic_Anh.TabStop = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(434, 95);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 20);
+            this.label6.TabIndex = 103;
+            this.label6.Text = "Ngày trả:";
+            // 
+            // lbl_NgayTra
+            // 
+            this.lbl_NgayTra.AutoSize = true;
+            this.lbl_NgayTra.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgayTra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_NgayTra.Location = new System.Drawing.Point(562, 95);
+            this.lbl_NgayTra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_NgayTra.Name = "lbl_NgayTra";
+            this.lbl_NgayTra.Size = new System.Drawing.Size(46, 20);
+            this.lbl_NgayTra.TabIndex = 104;
+            this.lbl_NgayTra.Text = "trống";
+            // 
             // UC_ReserveRooms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.lbl_NgayTra);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.lbl_ThoiGianDat);
             this.Controls.Add(this.lbl_NgayDat);
             this.Controls.Add(this.lbl_TenKH);
@@ -382,5 +410,7 @@
         private System.Windows.Forms.Label lb_maloaiphong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pic_Anh;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl_NgayTra;
     }
 }

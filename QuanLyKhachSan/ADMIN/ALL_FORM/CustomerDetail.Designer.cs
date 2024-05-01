@@ -108,7 +108,7 @@
             this.txt_GioiTinh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_GioiTinh.ForeColor = System.Drawing.Color.Black;
             this.txt_GioiTinh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_GioiTinh.Location = new System.Drawing.Point(568, 370);
+            this.txt_GioiTinh.Location = new System.Drawing.Point(569, 360);
             this.txt_GioiTinh.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_GioiTinh.Name = "txt_GioiTinh";
             this.txt_GioiTinh.PasswordChar = '\0';

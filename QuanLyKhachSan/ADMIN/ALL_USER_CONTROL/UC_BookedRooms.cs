@@ -34,12 +34,9 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
             lbl_LoaiPhong.Text = b.MaLoaiPhong;
             lbl_MaKH.Text = c.MaKH.ToString();
             lbl_TenKH.Text = booked.layTenKhachHang(c.MaKH.ToString());
-            string day = c.NgayDat.ToString();
-            lbl_NgayDat.Text = day.Substring(0, 10);
-            string day1 = c.NgayTra.ToString();
-            lbl_NgayTra.Text = day1.Substring(0, 10);
-            string time = c.ThoiGianDat.ToString();
-            lbl_ThoiGianDat.Text = time.Substring(10, 10);
+            lbl_NgayDat.Text = c.NgayDat.Value.ToString("dd/MM/yyyy");
+            lbl_NgayTra.Text = c.NgayTra.Value.ToString("dd/MM/yyyy");
+            lbl_ThoiGianDat.Text = c.ThoiGianDat.Value.ToString("HH:mm:ss");
             string image = Path.Combine(appDirectory, b.Anh);
             pic_Anh.Image = Image.FromFile(image);
             

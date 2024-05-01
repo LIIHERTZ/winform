@@ -25,7 +25,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             madv = a;
             lbl_TenDV.Text = b;
             cbb_MaDatPhong.DataSource = buy.loadMaDatPhong();
-            cbb_MaDatPhong.DisplayMember = "MaDatPhong";
+            cbb_MaDatPhong.DisplayMember = "MaPhong";
             cbb_MaDatPhong.ValueMember = "MaDatPhong";
             cbb_MaDatPhong.SelectedIndex = -1;
 
@@ -53,19 +53,42 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
                int gia = buy.layTien(madv);
                lbl_TongTien.Text = (sl*gia).ToString() + " vnđ";
             }
+            else if (txt_SoLuong.Text == "")
+            {
+                lbl_TongTien.Text = "";
+            }
 
         }
 
         private void btn_Mua_Click(object sender, EventArgs e)
         {
-            TongDichVu a = new TongDichVu();
-            a.MaDV = madv;
-            string madatphong = cbb_MaDatPhong.SelectedValue.ToString();
-            a.MaDatPhong = Convert.ToInt32(madatphong);
-            a.SoLuong = Convert.ToInt32(txt_SoLuong.Text);
-            buy.themDichVu(a);
-            MessageBox.Show("Thêm dịch vụ thành công!", "Thông báo");
-            this.Close();
+            if (cbb_MaDatPhong.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn phòng!", "Chú ý");
+            }
+            else if(txt_SoLuong.Text=="")
+            {
+                MessageBox.Show("Bạn chưa nhập số lượng!", "Chú ý");
+            }
+            else
+            {
+                TongDichVu a = new TongDichVu();
+                a.MaDV = madv;
+                string madatphong = cbb_MaDatPhong.SelectedValue.ToString();
+                a.MaDatPhong = Convert.ToInt32(madatphong);
+                a.SoLuong = Convert.ToInt32(txt_SoLuong.Text);
+                buy.themDichVu(a);
+                MessageBox.Show("Thêm dịch vụ thành công!", "Thông báo");
+                this.Close();
+            }
+        }
+
+        private void txt_SoLuong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

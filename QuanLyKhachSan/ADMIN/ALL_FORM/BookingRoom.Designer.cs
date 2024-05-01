@@ -63,7 +63,7 @@
             this.btn_Thoat.ForeColor = System.Drawing.Color.White;
             this.btn_Thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_Thoat.Image")));
             this.btn_Thoat.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_Thoat.Location = new System.Drawing.Point(716, 1);
+            this.btn_Thoat.Location = new System.Drawing.Point(618, 12);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(39, 37);
             this.btn_Thoat.TabIndex = 45;
@@ -97,6 +97,7 @@
             this.txt_SoNguoi.SelectedText = "";
             this.txt_SoNguoi.Size = new System.Drawing.Size(178, 27);
             this.txt_SoNguoi.TabIndex = 43;
+            this.txt_SoNguoi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SoNguoi_KeyPress);
             // 
             // txt_MaPhong
             // 
@@ -326,7 +327,7 @@
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(30, 11);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(207, 54);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(166, 44);
             this.guna2HtmlLabel1.TabIndex = 27;
             this.guna2HtmlLabel1.Text = "Đặt phòng";
             // 
@@ -388,6 +389,7 @@
             this.txt_MaKH.Size = new System.Drawing.Size(179, 27);
             this.txt_MaKH.TabIndex = 47;
             this.txt_MaKH.TextChanged += new System.EventHandler(this.txt_MaKH_TextChanged);
+            this.txt_MaKH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_MaKH_KeyPress);
             // 
             // guna2HtmlLabel10
             // 
@@ -435,9 +437,9 @@
             this.btn_XacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_XacNhan.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XacNhan.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_XacNhan.Location = new System.Drawing.Point(418, 462);
+            this.btn_XacNhan.Location = new System.Drawing.Point(372, 462);
             this.btn_XacNhan.Name = "btn_XacNhan";
-            this.btn_XacNhan.Size = new System.Drawing.Size(212, 63);
+            this.btn_XacNhan.Size = new System.Drawing.Size(181, 47);
             this.btn_XacNhan.TabIndex = 96;
             this.btn_XacNhan.Text = "XÁC NHẬN";
             this.btn_XacNhan.UseVisualStyleBackColor = true;
@@ -448,7 +450,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(756, 563);
+            this.ClientSize = new System.Drawing.Size(665, 563);
             this.Controls.Add(this.btn_XacNhan);
             this.Controls.Add(this.dtp_NgayDatPhong);
             this.Controls.Add(this.dtp_NgayTraPhong);

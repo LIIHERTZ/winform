@@ -37,8 +37,24 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
 
         private void btn_KiemTra_Click(object sender, EventArgs e)
         {
-            uccustomerdao = new UC_CustomerDAO();
-            dg_KhachHang.DataSource = uccustomerdao.LocKH(Convert.ToInt32(txt_MaKH.Text));
+            if (txt_MaKH.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập mã khách hàng!", "Chú ý");
+            }
+            else
+            {
+                uccustomerdao = new UC_CustomerDAO();
+                dg_KhachHang.DataSource = uccustomerdao.LocKH(Convert.ToInt32(txt_MaKH.Text));
+            }
+
+        }
+
+        private void txt_MaKH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
